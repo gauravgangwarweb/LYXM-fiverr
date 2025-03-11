@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 @layer utilities {
@@ -14,7 +15,7 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: #FEFFFE;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
