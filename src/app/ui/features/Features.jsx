@@ -17,19 +17,116 @@ const Features = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 mt-20">
         <div className="rounded-2xl bg-[#e6e6ea]">
-            <img className="w-full rounded-t-2xl" loading="lazy" src="/features/festivals.png" alt="festivals" />
-            <div className="px-8 py-12">
-                <h4 className="text-[34px] text-[#1e2022]">Concerts & Festivals</h4>
-                <div className="grid grid-cols-2 mt-2">
-                    <p className="text-lg text-[#1e2022]">Serve massive crowds quickly without sacrificing quality. Our tech-driven approach ensures consistently perfect pours, even at the largest venues.</p>
-                    <div className="flex justify-end items-end">
-
-                    <Link className="text-[#343a40] border border-[#343a40] p-2 rounded-md" href="#">Learn More</Link>
-                    </div>
-                </div>
+          <img
+            className="w-full rounded-t-2xl"
+            loading="lazy"
+            src="/features/festivals.png"
+            alt="festivals"
+          />
+          <div className="p-8">
+            <h4 className="text-[34px] text-[#1e2022]">Concerts & Festivals</h4>
+            <div className="flex justify-between mt-2">
+              <p className="w-[70%] text-lg text-[#1e2022]">
+                Serve massive crowds quickly without sacrificing quality. Our
+                tech-driven approach ensures consistently perfect pours, even at
+                the largest venues.
+              </p>
+              <div className="flex justify-end items-end">
+                <Link
+                  className="bg-white hover:bg-[#343a40] text-[#343a40] hover:text-[#a0a7ac] border-[1.5px] border-[#343a40] px-3 py-2 rounded-md"
+                  href="#"
+                >
+                  Learn More
+                </Link>
+              </div>
             </div>
+          </div>
+        </div>
+        <div className="rounded-2xl bg-[#e6e6ea]">
+          <img
+            className="w-full rounded-t-2xl"
+            loading="lazy"
+            src="/features/wedding-tablet.png"
+            alt="festivals"
+          />
+          <div className="p-8">
+            <h4 className="text-[34px] text-[#1e2022]">
+              Weddings & Celebrations
+            </h4>
+            <div className="flex justify-between mt-2">
+              <p className="w-[70%] text-lg text-[#1e2022]">
+                Curate an unforgettable beverage experience that matches the
+                elegance and exclusivity of your event. Every detail, from
+                flavor profiles to presentation, is meticulously crafted.
+              </p>
+              <div className="flex justify-end items-end">
+                <Link
+                  className="bg-white hover:bg-[#343a40] text-[#343a40] hover:text-[#a0a7ac] border-[1.5px] border-[#343a40] px-3 py-2 rounded-md"
+                  href="#"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded-2xl bg-[#e6e6ea]">
+          <img
+            className="w-full rounded-t-2xl"
+            loading="lazy"
+            src="/features/brands.png"
+            alt="festivals"
+          />
+          <div className="p-8">
+            <h4 className="text-[34px] text-[#1e2022]">
+              Leading Spirit Brands
+            </h4>
+            <div className="flex justify-between mt-2">
+              <p className="w-[70%] text-lg text-[#1e2022]">
+                Showcase your portfolio at premier events. With Elyxm Flow, each
+                pour reflects your brand’s identity, guaranteeing a consistent,
+                high-impact impression on attendees.
+              </p>
+              <div className="flex justify-end items-end">
+                <Link
+                  className="bg-white hover:bg-[#343a40] text-[#343a40] hover:text-[#a0a7ac] border-[1.5px] border-[#343a40] px-3 py-2 rounded-md"
+                  href="#"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded-2xl bg-[#e6e6ea]">
+          <img
+            className="w-full rounded-t-2xl"
+            loading="lazy"
+            src="/features/tradeshow.png"
+            alt="festivals"
+          />
+          <div className="p-8">
+            <h4 className="text-[34px] text-[#1e2022]">
+              Corporate & Conferences
+            </h4>
+            <div className="flex justify-between mt-2">
+              <p className="w-[70%] text-lg text-[#1e2022]">
+                Elevate networking sessions and after-hours mixers with
+                precision-crafted cocktails that leave a lasting
+                impression—perfect for boosting engagement and brand reputation.
+              </p>
+              <div className="flex justify-end items-end">
+                <Link
+                  className="bg-white hover:bg-[#343a40] text-[#343a40] hover:text-[#a0a7ac] border-[1.5px] border-[#343a40] px-3 py-2 rounded-md"
+                  href="#"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
