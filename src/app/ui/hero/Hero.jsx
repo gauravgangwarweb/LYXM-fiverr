@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="relative bg-[#141416] pt-20">
       <div className="flex justify-center items-center lg:flex-row md:flex-row sm:flex-col-reverse flex-col-reverse">
-        <div className="w-full md:w-1/2 flex flex-col items-start justify-center pl-6 lg:pl-16 py-14 md:py-32">
+        <div className="w-full md:w-1/2 flex flex-col items-start justify-center pl-6 lg:pl-16 py-14 md:py-32 mt-14 md:mt-0">
           <h1 className="text-[32px] lg:text-[64px] text-foreground leading-none">
             Meet the future of mixology
           </h1>
@@ -59,8 +59,10 @@ const Hero = () => {
           <div className="h-[250px] md:h-[500px] w-full top-0 right-0 border-transparent relative">
             <video
               autoPlay
+              playsInline
               muted
               loop
+              preload="auto"
               className="w-full h-full object-cover md:rounded-l-2xl absolute top-12"
               src="/hero-video.mp4"
             ></video>
@@ -87,7 +89,16 @@ const Hero = () => {
                 </button>
               </DialogTrigger>
               <DialogContent className="w-full border-0 bg-black">
-                <video autoPlay controls loop className="h-full w-full object-contain aspect-square" src="/hero-video.mp4"></video>
+                <video 
+                  autoPlay
+                  playsInline
+                  muted
+                  loop
+                  preload="auto"
+                  controls
+                  className="h-full w-full object-contain aspect-square" 
+                  src="/hero-video.mp4"
+                ></video>
               </DialogContent>
             </Dialog>
           </div>
