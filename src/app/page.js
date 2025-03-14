@@ -2,7 +2,9 @@ import ElyxmFlow from "./ui/elyxm-flow/ElyxmFlow";
 import Features from "./ui/features/Features";
 import Hero from "./ui/hero/Hero";
 import SeenIn from "./ui/seen/SeenIn";
+import SignupCta from "./ui/signup-cta/SignupCta";
 import SmartSips from "./ui/smart-sips/SmartSips";
+import StackedCards from "./ui/stacked-cards/StackedCards";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <SmartSips />
         <ElyxmFlow />
         <Features />
+        <SignupCta/>
+        <StackedCards/>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         
