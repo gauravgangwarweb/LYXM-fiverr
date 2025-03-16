@@ -1,5 +1,6 @@
 import ElyxmFlow from "./ui/elyxm-flow/ElyxmFlow";
 import Features from "./ui/features/Features";
+import Footer from "./ui/Footer";
 import Hero from "./ui/hero/Hero";
 import MeetOurCus from "./ui/meet-our-cus/MeetOurCus";
 import Newsroom from "./ui/newsroom/Newsroom";
@@ -22,9 +23,7 @@ export default function Home() {
         <MeetOurCus />
         <Newsroom />
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        
-      </footer>
+      <Footer />
     </div>
   );
 }

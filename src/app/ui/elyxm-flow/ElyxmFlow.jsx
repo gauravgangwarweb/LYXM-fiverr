@@ -1,19 +1,12 @@
 import Link from "next/link";
+import Video from "./Video";
 
 const ElyxmFlow = () => {
   return (
     <section className="bg-[#f5f5f7] md:pt-16">
       <div className="flex justify-center items-center lg:flex-row md:flex-row flex-col">
         <div className="w-full md:w-1/2">
-          <div className="h-[250px] md:h-[500px] w-full top-0 right-0 border-transparent relative">
-            <video
-              autoPlay
-              muted
-              loop
-              className="w-full h-full object-cover md:rounded-xl absolute top-12"
-              src="/elyxm-flow/elyxm_flow.mp4"
-            ></video>
-          </div>
+          <Video />
         </div>
         <div className="w-full md:w-1/2 flex flex-col items-start justify-center px-4 md:px-0 md:pl-8 lg:pl-20 lg:pr-4 xl:pr-52 mt-20 md:mt-0 lg:pb-4">
           <h2 className="text-3xl font-medium leading-tight tracking-tight text-primaryDark lg:text-[56px]">

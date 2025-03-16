@@ -1,8 +1,37 @@
 import Link from "next/link";
+import NewsCarousel from "./NewsCarousel";
+
+const newsData = [
+  {
+    image: "/newsroom/roberto-cavada.png",
+    title: "Inspired by the resilience of our Los Angeles community",
+    author: {
+        name: "Maddie Frame",
+        image: "/newsroom/demo-img.webp",
+    }
+  },
+  {
+    image: "/newsroom/notiultimas.png",
+    title: "Vestaboard Partners with NBPA to inspire players, teams and community",
+    author: {
+        name: "Maddie Frame",
+        image: "/newsroom/demo-img.webp",
+    }
+  },
+  {
+    image: "/newsroom/machine-at-monica-varela.png",
+    title: "Vestaboard White features in Cool Material's Holiday Gift Guide",
+    author: {
+        name: "Maddie Frame",
+        image: "/newsroom/demo-img.webp",
+    }
+  },
+  // Add more news items as needed
+];
 
 const Newsroom = () => {
   return (
-    <section className="bg-[#171818] px-4 md:px-8 py-20">
+    <section className="bg-[#171918] px-4 md:px-8 py-20">
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8">
         <h2 className="text-[#f5f5f7] text-[32px] md:text-[56px] font-medium leading-none">
           Newsroom
@@ -24,7 +53,9 @@ const Newsroom = () => {
           </svg>
         </Link>
       </div>
-      <div className="w-full"></div>
+      <div className="w-full mt-10 md:pl-10 px-0">
+        <NewsCarousel news={newsData} />
+      </div>
     </section>
   );
 };
