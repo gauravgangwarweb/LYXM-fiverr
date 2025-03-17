@@ -1,19 +1,13 @@
 import Link from "next/link";
 import HeroVideo from "./HeroVideo";
+import HeroText from "./HeroText";
 
 const Hero = () => {
   return (
     <section className="relative bg-[#141416] pt-20">
       <div className="flex justify-center items-center lg:flex-row md:flex-row sm:flex-col-reverse flex-col-reverse">
         <div className="w-full md:w-1/2 flex flex-col items-start justify-center pl-6 lg:pl-16 py-14 md:py-32 mt-14 md:mt-0">
-          <h1 className="text-[32px] lg:text-[64px] text-foreground leading-none">
-            Meet the future of mixology
-          </h1>
-          <p className="text-[#4D4D4D] text-2xl font-medium mt-4">
-            From the first sip to the final drop, Elyxm sets the standard for
-            what a cocktail experience should be—Expertly Crafted and Flawlessly
-            Poured.
-          </p>
+          <HeroText />
           <div className="flex gap-6 mt-4 self-start">
             <Link className="group flex gap-2" href="#">
               <span className="text-base font-medium underline underline-offset-8">

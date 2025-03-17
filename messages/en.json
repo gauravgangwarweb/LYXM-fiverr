@@ -1,0 +1,45 @@
+{
+    "hero": {
+        "title": "Meet the future of mixology",
+        "discription": "From the first sip to the final drop, Elyxm sets the standard for what a cocktail experience should be—Expertly Crafted and Flawlessly Poured."
+    },
+    "smartSips": {
+        "title": "Smart Sips: The Cocktail Revolution",
+        "discription": "With 1/16th-of-an-ounce precision, 5-second pours, and a curated menu of over 250 cocktail options sourced from mixologists around the world, we serve up bespoke drink experiences—each pour uniquely tailored and powered by real-time data and innovative machine learning."
+    },
+    "elyxmFlow": {
+        "title": "Elyxm “Flow”: The Event Experience",
+        "discription": "Imagine your event transformed by precision mixology that brings every cocktail to life in real time. Whether you're organizing a concert, festival, conference, or high-profile gathering, enjoy an immersive celebration where each drink elevates your experience and creates unforgettable moments."
+    },
+    "features": {
+        "title": "Elyxm Flow at Work",
+        "subtitle": "Elyxm Flow revolutionizes mixology for events at scale—whether you're energizing a festival or curating a tailored luxury celebration. With our blend of advanced technology and masterful craftsmanship, you serve consistently exceptional cocktails that captivate guests and streamline event operations.",
+        "cardtitle1": "Concerts & Festivals",
+        "carddiscription1": "Serve massive crowds quickly without sacrificing quality. Our tech-driven approach ensures consistently perfect pours, even at the largest venues.",
+        "cardtitle2": "Weddings & Celebrations",
+        "carddiscription2": "Curate an unforgettable beverage experience that matches the elegance and exclusivity of your event. Every detail, from flavor profiles to presentation, is meticulously crafted.",
+        "cardtitle3": "Leading Spirit Brands",
+        "carddiscription3": "Showcase your portfolio at premier events. With Elyxm Flow, each pour reflects your brand’s identity, guaranteeing a consistent, high-impact impression on attendees.",
+        "cardtitle4": "Corporate & Conferences",
+        "carddiscription4": "Elevate networking sessions and after-hours mixers with precision-crafted cocktails that leave a lasting impression—perfect for boosting engagement and brand reputation."
+    },
+    "stackedCards": {
+        "title": "Real-Time Control, Right at Your Fingertips",
+        "subtitle": "Monitor your cocktail service from any device.",
+        "cardtitle1": "Live Metrics",
+        "carddiscription1": "Track pours, monitor inventory, and oversee performance with up-to-the-second data.",
+        "cardtitle2": "Effortless Coordination",
+        "carddiscription2": "Seamlessly syncs with our on-site systems to keep service consistent and efficient."
+    },
+    "meetOurCus": {
+        "title": "Meet Our Pioneer Clients",
+        "challenge1": "BacardiTheir in-house mixology needed a way to experiment with innovative cocktail recipes tailored to a dynamic menu, all without sacrificing quality or consistency when the mixologist wasn't on-site.",
+        "solution1": "By combining our advanced dispensing technology with a robust recipe library, Gastro Market can effortlessly introduce new, on-trend cocktails at scale—ensuring every drink meets the same high standard, even in the mixologist’s absence.",
+        "challenge2": "Delivering a high-end, tailored bar experience during in-house concerts, with beverages crafted for each artist and audience.",
+        "solution2": "We collaborate on event-specific menus, leveraging Elyxm’s precision to serve customized drinks that reflect the concert’s vibe, ensuring every guest feels part of the show.",
+        "challenge3": "Creating a distinct, on-brand beverage experience that complements unique jewelry collections.",
+        "solution3": "Elyxm’s customizable recipes allow Monica Varela to pair exclusive cocktails with her designs—enhancing store events through taste and visual synergy.",
+        "challenge4": "Offering quality cocktails in a loud, club-like atmosphere that previously limited drink options.",
+        "solution4": "Our streamlined system operates quickly and efficiently, enabling El Cielo to expand its menu from basic offerings to a full cocktail range—without increasing complexity or wait times."
+    }
+}
