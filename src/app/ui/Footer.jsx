@@ -190,7 +190,7 @@ const Footer = () => {
             <div className="mt-4 flex flex-col">
               <label htmlFor="country">Country (dropdown)*</label>
               <select
-                className="w-fit mt-[6px] px-2 py-2 border border-white outline-none bg-inherit text-inherit rounded-md"
+                className="w-full md:w-fit mt-[6px] px-2 py-2 border border-white outline-none bg-inherit text-inherit rounded-md"
                 name="country"
               >
                 <option value="">Please Select</option>

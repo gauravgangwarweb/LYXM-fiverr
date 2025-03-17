@@ -20,7 +20,7 @@ const HeroVideo = () => {
   }, []);
 
   return (
-    <div className="h-[250px] md:h-[500px] w-full top-0 right-0 border-transparent relative">
+    <div className="h-[250px] md:h-[500px] w-full top-0 right-0 border-transparent relative aspect-video">
       <video
         ref={videoRef}
         autoPlay
@@ -37,7 +37,7 @@ const HeroVideo = () => {
       </video>
       <Dialog>
         <DialogTrigger asChild>
-          <button className="absolute flex gap-2 items-center top-64 md:top-20 left-72 md:left-10">
+          <button className="absolute flex gap-2 items-center top-64 md:top-20 left-[73%] md:left-10">
             <span className="">Watch</span>
             <span className="border rounded-full p-1">
               <svg
