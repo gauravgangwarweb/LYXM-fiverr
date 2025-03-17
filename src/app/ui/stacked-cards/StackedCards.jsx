@@ -30,7 +30,7 @@ const StackedCards = () => {
               <HiOutlineDeviceMobile className="text-2xl" />
               <FiGlobe className="text-2xl" />
             </div>
-            <Link className="group flex gap-2 mt-6" href="#">
+            {/* <Link className="group flex gap-2 mt-6" href="#">
               <span className="text-base font-medium underline underline-offset-8">
                 Learn More
               </span>
@@ -45,7 +45,7 @@ const StackedCards = () => {
                 <path d="M133.12 611.84h803.84v51.2H133.12zM806.144 712.3968l32.9472 39.168-237.0048 199.4752-32.9728-39.168z"></path>
                 <path d="M658.0992 276.4544l283.5968 336.7936-39.168 32.9728-283.5968-336.7936z"></path>
               </svg>
-            </Link>
+            </Link> */}
           </div>
           <div className="md:py-6 rounded-md">
             <img
@@ -77,7 +77,7 @@ const StackedCards = () => {
               <HiOutlineDeviceMobile className="text-2xl" />
               <FiGlobe className="text-2xl" />
             </div>
-            <Link className="group flex gap-2 mt-6" href="#">
+            {/* <Link className="group flex gap-2 mt-6" href="#">
               <span className="text-base font-medium underline underline-offset-8">
                 Learn More
               </span>
@@ -92,7 +92,7 @@ const StackedCards = () => {
                 <path d="M133.12 611.84h803.84v51.2H133.12zM806.144 712.3968l32.9472 39.168-237.0048 199.4752-32.9728-39.168z"></path>
                 <path d="M658.0992 276.4544l283.5968 336.7936-39.168 32.9728-283.5968-336.7936z"></path>
               </svg>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
