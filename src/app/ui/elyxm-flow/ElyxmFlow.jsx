@@ -17,7 +17,7 @@ const ElyxmFlow = () => {
           <p class="mb-8 text-lg leading-relaxed font-normal text-[#a0a7ac] mt-4">
           {t("discription")}
           </p>
-          <Link
+          {/* <Link
             class="group inline-flex items-center gap-3 hover:opacity-8 text-primaryDark"
             href="#"
           >
@@ -33,7 +33,7 @@ const ElyxmFlow = () => {
               <path d="M133.12 611.84h803.84v51.2H133.12zM806.144 712.3968l32.9472 39.168-237.0048 199.4752-32.9728-39.168z"></path>
               <path d="M658.0992 276.4544l283.5968 336.7936-39.168 32.9728-283.5968-336.7936z"></path>
             </svg>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

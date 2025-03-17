@@ -18,12 +18,12 @@ const FeatureCard = ({img, title, desc, link}) => {
             {desc}
           </p>
           <div className="flex justify-start md:justify-end items-end mt-4 md:mt-0">
-            <Link
+            {/* <Link
               className="bg-white hover:bg-[#343a40] text-[#343a40] hover:text-[#a0a7ac] text-center font-bold md:font-normal border-[1.5px] border-[#343a40] p-1 lg:px-3 lg:py-2 rounded-md"
               href={link}
             >
               Learn More
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

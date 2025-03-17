@@ -24,7 +24,7 @@ export default function Home() {
         <MeetOurCus />
         <Newsroom />
       </main>
-      <Footer />
+      <Footer />  
     </div>
   );
 }
