@@ -2,28 +2,28 @@ import { LuApple } from "react-icons/lu";
 import { HiOutlineDeviceMobile } from "react-icons/hi";
 import { FiGlobe } from "react-icons/fi";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const StackedCards = () => {
+  const t = useTranslations("stackedCards")
   return (
     <section className=" bg-[#171818] text-[#f5f5f7] pt-8 md:pt-44 pb-[580px] px-0 md:px-4 lg:px-0">
       <div className="mx-auto max-w-[870px]">
         <div className="px-4">
           <h2 className="text-[32px] md:text-[56px] text-center font-medium md:font-normal">
-            The best of analog and digital
+            {t("title")}
           </h2>
           <p className="pt-4 md:pt-7 text-lg text-[#a0a7ac] text-center">
-            It’s not a digital screen. 8,448 magical spinning flaps you control
-            with your device from anywhere.
+            {t("subtitle")}
           </p>
         </div>
         <div className="flex flex-col md:flex-row mt-20">
           <div className="bg-[#e6e6ea] rounded-none md:rounded-lg text-black px-4 md:px-0 py-6 lg:py-16 md:pl-16 md:pr-40 w-full max-w-[500px]">
             <h2 className="text-[20px] md:text-[34px] font-medium">
-              Live Metrics
+              {t("cardtitle1")}
             </h2>
             <p className="my-6 text-lg">
-              Track pours, monitor inventory, and oversee performance with
-              up-to-the-second data.
+              {t("carddiscription1")}
             </p>
             <div className="flex gap-5">
               <LuApple className="text-2xl" />
@@ -67,10 +67,10 @@ const StackedCards = () => {
           </div>
           <div className="bg-[#e6e6ea] rounded-none md:rounded-lg text-black px-4 md:px-0 py-16 lg:py-24 md:pr-8 lg:pr-16 md:pl-16 lg::pl-32 w-full max-w-[500px]">
             <h2 className="text-[20px] md:text-[34px] font-medium">
-            Effortless Coordination
+            {t("cardtitle2")}
             </h2>
             <p className="my-6 text-lg">
-            Seamlessly syncs with our on-site systems to keep service consistent and efficient.
+            {t("carddiscription2")}
             </p>
             <div className="flex gap-5">
               <LuApple className="text-2xl" />

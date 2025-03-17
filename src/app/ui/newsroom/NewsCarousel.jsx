@@ -4,48 +4,76 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 const NewsCarousel = ({news}) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [screenSize, setScreenSize] = useState('desktop');
   const swiperRef = useRef(null);
 
   useEffect(() => {
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+    const checkScreenSize = () => {
+      const width = window.innerWidth;
+      if (width < 768) {
+        setScreenSize('mobile');
+      } else if (width < 1024) {
+        setScreenSize('tablet');
+      } else {
+        setScreenSize('desktop');
+      }
     };
     
-    checkIfMobile();
-    window.addEventListener('resize', checkIfMobile);
-    return () => window.removeEventListener('resize', checkIfMobile);
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
+
+  const getSlidesPerView = () => {
+    switch (screenSize) {
+      case 'mobile':
+        return 1;
+      case 'tablet':
+        return 1.7;
+      default:
+        return 2.9;
+    }
+  };
 
   return (
     <div className="w-full relative">
       <Swiper
         ref={swiperRef}
-        slidesPerView={isMobile ? 1 : 2.90}
-        spaceBetween={isMobile ? 40 : 50}
-        className="w-full"
+        slidesPerView={getSlidesPerView()}
+        spaceBetween={screenSize === 'mobile' ? 40 : 50}
+        className="!h-auto"
       >
-        {news.map((news, index) => (
-          <SwiperSlide key={index}>
-            <div 
-            className="h-[470px] md:h-[540px] bg-white rounded-2xl overflow-hidden shadow-lg shadow-black"
-            >
-              <img 
-                src={news.image} 
-                alt={news.title}
-                className="w-full object-cover"
-                loading="lazy"
-              />
-              <div className="p-8">
-                <h5 className="text-[#1e2022] text-lg md:text-2xl mb-2">{news.title}</h5>
-                <div className="flex items-center gap-2 mt-20">
-                    <img className='w-12 rounded-full' src={news.author.image} alt="demo-person" />
-                    <p className="text-[#1e2022] text-lg">{news.author.name}</p>
+        <div className="swiper-wrapper !h-auto">
+          {news.map((news, index) => (
+            <SwiperSlide key={index} className="!h-auto">
+              <div className="flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-lg shadow-black relative">
+                <div className="relative w-full aspect-video">
+                  <img 
+                    src={news.image} 
+                    alt={news.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-8 flex-1 flex flex-col">
+                  <h5 className="text-[#1e2022] text-lg md:text-2xl mb-20 flex-grow">
+                    {news.title}
+                  </h5>
+                  <div className="absolute flex items-center gap-2 bottom-4 left-6">
+                    <img 
+                      className='w-12 h-12 rounded-full object-cover flex-shrink-0' 
+                      src={news.author.image} 
+                      alt={news.author.name} 
+                    />
+                    <p className="text-[#1e2022] text-lg">
+                      {news.author.name}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          ))}
+        </div>
       </Swiper>
     </div>
   );

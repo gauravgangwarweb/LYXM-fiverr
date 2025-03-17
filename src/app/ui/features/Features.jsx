@@ -1,50 +1,49 @@
+import { useTranslations } from "next-intl";
 import FeatureCard from "./FeatureCard";
 
-const featuresData = [
-  {
-    img: "/features/festivals.png",
-    title: "Concerts & Festivals",
-    desc:
-      "Serve massive crowds quickly without sacrificing quality. Our tech-driven approach ensures consistently perfect pours, even at the largest venues.",
-    link: "#",
-  },
-  {
-    img: "/features/wedding-tablet.png",
-    title: "Weddings & Celebrations",
-    desc:
-      "Curate an unforgettable beverage experience that matches the elegance and exclusivity of your event. Every detail, from flavor profiles to presentation, is meticulously crafted.",
-    link: "#",
-  },
-  {
-    img: "/features/brands.png",
-    title: "Leading Spirit Brands",
-    desc:
-      "Showcase your portfolio at premier events. With Elyxm Flow, each pour reflects your brand’s identity, guaranteeing a consistent, high-impact impression on attendees.",
-    link: "#",
-  },
-  {
-    img: "/features/tradeshow.png",
-    title: "Corporate & Conferences",
-    desc:
-      "Elevate networking sessions and after-hours mixers with precision-crafted cocktails that leave a lasting impression—perfect for boosting engagement and brand reputation.",
-    link: "#",
-  }
-]
-
 const Features = () => {
+  const t = useTranslations("features")
+
+  const featuresData = [
+    {
+      img: "/features/festivals.png",
+      title: `${t("cardtitle1")}`,
+      desc:
+        `${t("carddiscription1")}`,
+      link: "#",
+    },
+    {
+      img: "/features/wedding-tablet.png",
+      title: `${t("cardtitle2")}`,
+      desc:
+        `${t("carddiscription2")}`,
+      link: "#",
+    },
+    {
+      img: "/features/brands.png",
+      title: `${t("cardtitle3")}`,
+      desc:
+        `${t("carddiscription3")}`,
+      link: "#",
+    },
+    {
+      img: "/features/tradeshow.png",
+      title: `${t("cardtitle4")}`,
+      desc:
+        `${t("carddiscription4")}`,
+      link: "#",
+    }
+  ]
+
   return (
     <section className="bg-[#ffffff] pt-8 md:pt-36 px-4 lg:px-28">
       <div className="flex flex-col items-center md:grid grid-cols-1 md:grid-cols-2">
         <h2 className="text-[32px] md:text-[56px] text-[#1e2022] leading-[60px] md:self-start">
-          Elyxm Flow at Work
+          {t("title")}
         </h2>
         <div className="flex items-end justify-end md:pl-20 lg:pl-40">
           <p className="text-lg text-[#1e2022] self-end">
-            Elyxm Flow revolutionizes mixology for events at scale—whether
-            you're energizing a festival or curating a tailored luxury
-            celebration. With our blend of advanced technology and masterful
-            craftsmanship, you serve consistently exceptional cocktails that
-            captivate guests and streamline event operations.
+            {t("subtitle")}
           </p>
         </div>
       </div>

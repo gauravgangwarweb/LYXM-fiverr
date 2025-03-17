@@ -9,31 +9,35 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaXmark, FaTwitter } from "react-icons/fa6";
+import { useLocale } from "next-intl";
+import { ChangeEvent, useTransition } from 'react';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showLangDropdown, setShowLangDropdown] = useState(false);
-  const [selectedLang, setSelectedLang] = useState('en');
+  const [selectedLang, setSelectedLang] = useState("en");
+  const [isPending, startTransition] = useTransition();
   const router = useRouter();
+  const localActive = useLocale();
 
   const languages = [
-    { code: 'en', flag: '/eng-flag.png', label: 'English' },
-    { code: 'es', flag: '/spain.png', label: 'Spanish' }
+    { code: "en", flag: "/eng-flag.png", label: "English" },
+    { code: "es", flag: "/spain.png", label: "Spanish" },
   ];
 
   const LanguageDropdown = () => (
     <div className="relative">
-      <button 
+      <button
         onClick={() => setShowLangDropdown(!showLangDropdown)}
         className="flex items-center gap-2 p-2 hover:bg-gray-700/20 rounded-full"
       >
-        <img 
-          src={languages.find(lang => lang.code === selectedLang)?.flag} 
-          alt="selected language" 
+        <img
+          src={languages.find((lang) => lang.code === localActive)?.flag}
+          alt="selected language"
           className="w-6 h-4 object-cover rounded-full"
         />
       </button>
-      
+
       {showLangDropdown && (
         <div className="absolute top-full right-0 mt-1 bg-black/90 rounded-md shadow-lg py-1">
           {languages.map((lang) => (
@@ -42,15 +46,18 @@ const Navbar = () => {
               onClick={() => {
                 setSelectedLang(lang.code);
                 setShowLangDropdown(false);
+                startTransition(() => {
+                  router.replace(`/${lang.code}`);
+                });
               }}
-              className="flex items-center gap-2 px-4 py-2 w-full hover:bg-gray-700/20"
+              className="flex items-center gap-2 p-2 w-full hover:bg-gray-700/20"
             >
-              <img 
-                src={lang.flag} 
+              <img
+                src={lang.flag}
                 alt={`${lang.label} flag`}
-                className="w-6 h-4 object-cover"
+                className="w-6 h-4 object-cover rounded-full"
               />
-              <span className="text-white text-sm">{lang.label}</span>
+              {/* <span className="text-white text-sm">{lang.label}</span> */}
             </button>
           ))}
         </div>
