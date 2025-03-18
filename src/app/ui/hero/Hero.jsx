@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="w-full md:w-1/2 flex flex-col items-start justify-center pl-6 lg:pl-16 py-14 md:py-32 mt-14 md:mt-0">
           <HeroText />
           <div className="flex gap-6 mt-4 self-start">
-            <Link className="group flex gap-2" href="#">
+            {/* <Link className="group flex gap-2" href="#">
               <span className="text-base font-medium underline underline-offset-8">
                 Shop Elyxm
               </span>
@@ -40,7 +40,7 @@ const Hero = () => {
                 <path d="M133.12 611.84h803.84v51.2H133.12zM806.144 712.3968l32.9472 39.168-237.0048 199.4752-32.9728-39.168z"></path>
                 <path d="M658.0992 276.4544l283.5968 336.7936-39.168 32.9728-283.5968-336.7936z"></path>
               </svg>
-            </Link>
+            </Link> */}
           </div>
           <Link href="#">
             <img className="w-28 block md:hidden mt-10" loading="lazy" src="/fast-company.webp" alt="fast-company" />

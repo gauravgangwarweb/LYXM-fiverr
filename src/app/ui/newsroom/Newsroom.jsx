@@ -36,7 +36,7 @@ const Newsroom = () => {
         <h2 className="text-[#f5f5f7] text-[32px] md:text-[56px] font-medium leading-none">
           Newsroom
         </h2>
-        <Link className="group flex gap-2" href="#">
+        {/* <Link className="group flex gap-2" href="#">
           <span className="text-base font-medium underline underline-offset-8">
             View all news
           </span>
@@ -51,7 +51,7 @@ const Newsroom = () => {
             <path d="M133.12 611.84h803.84v51.2H133.12zM806.144 712.3968l32.9472 39.168-237.0048 199.4752-32.9728-39.168z"></path>
             <path d="M658.0992 276.4544l283.5968 336.7936-39.168 32.9728-283.5968-336.7936z"></path>
           </svg>
-        </Link>
+        </Link> */}
       </div>
       <div className="w-full mt-10 md:pl-10 px-0">
         <NewsCarousel news={newsData} />
