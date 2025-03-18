@@ -45,7 +45,7 @@ export default function CustomersCarousel({customers}) {
               />
               <div className='px-3'>
 
-              <h3 className="text-black font-bold mt-4">
+              <h3 className="text-black font-medium mt-4">
                 {customer.challenge}
               </h3>
               <p className='text-[12px] text-[#7e878e] mt-2'>
