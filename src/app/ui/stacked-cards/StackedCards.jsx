@@ -30,6 +30,7 @@ const StackedCards = () => {
               <HiOutlineDeviceMobile className="text-2xl" />
               <FiGlobe className="text-2xl" />
             </div>
+            <p className="text-[#000000] text-[12.8px] mt-8">*Ask us how Elyxm can connect with your current systems—be it your POS, mobile app, or website—so you can manage events without missing a beat.</p>
             {/* <Link className="group flex gap-2 mt-6" href="#">
               <span className="text-base font-medium underline underline-offset-8">
                 Learn More
