@@ -14,7 +14,7 @@ const FeatureCard = ({img, title, desc, link}) => {
             {title}
         </h4>
         <div className="flex flex-col md:flex-row justify-between mt-2">
-          <p className="w-full md:w-[70%] text-lg text-[#1e2022]">
+          <p className="w-full text-lg text-[#1e2022]">
             {desc}
           </p>
           <div className="flex justify-start md:justify-end items-end mt-4 md:mt-0">

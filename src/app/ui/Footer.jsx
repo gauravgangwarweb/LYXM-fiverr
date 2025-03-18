@@ -1,6 +1,7 @@
 import { countries } from "@/lib/countries";
 import Link from "next/link";
-import { FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FiYoutube } from "react-icons/fi";
 
@@ -228,7 +229,7 @@ const Footer = () => {
         <div className="flex flex-col items-start md:items-end mt-10 md:mt-0">
           <div className="flex gap-4">
             <Link href="#">
-              <FaTwitter className="text-white text-2xl" />
+              <FaXTwitter className="text-white text-2xl" />
             </Link>
             <Link href="#">
               <FaFacebookF className="text-white text-2xl" />
@@ -241,9 +242,16 @@ const Footer = () => {
             </Link>
           </div>
           <Link className="mt-4" href="#">
-                <img className="w-32" loading="lazy" src="/logo-footer.png" alt="footer-logo" />
+            <img
+              className="w-32"
+              loading="lazy"
+              src="/logo-footer.png"
+              alt="footer-logo"
+            />
           </Link>
-          <p className="text-xs text-[#f5f5f7] mt-2">Copyright @ 2025, LYXM, Inc.</p>
+          <p className="text-xs text-[#f5f5f7] mt-2">
+          Copyright © 2025, ELYXM, Inc.
+          </p>
         </div>
       </div>
     </footer>

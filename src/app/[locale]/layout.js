@@ -1,6 +1,6 @@
 import { roboto } from "../ui/fonts";
 import Navbar from "../ui/Navbar";
-import "./globals.css";
+import "../globals.css";
 
 
 export const metadata = {
