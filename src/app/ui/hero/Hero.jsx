@@ -4,7 +4,7 @@ import HeroText from "./HeroText";
 
 const Hero = () => {
   return (
-    <section className="relative bg-[#141416] pt-20">
+    <section className="relative bg-[#141416] pt-12 md:pt-14">
       <div className="flex justify-center items-center lg:flex-row md:flex-row sm:flex-col-reverse flex-col-reverse">
         <div className="w-full md:w-1/2 flex flex-col items-start justify-center pl-6 lg:pl-16 py-14 md:py-32 mt-14 md:mt-0">
           <HeroText />

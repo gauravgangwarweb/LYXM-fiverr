@@ -4,7 +4,7 @@ import Link from "next/link";
 const SmartSips = () => {
     const t = useTranslations("smartSips")
     return (
-        <section className="bg-[#ffffff] px-2 md:px-0 py-8 md:py-20">
+        <section className="bg-[#ffffff] px-2 md:px-0 py-8 md:py-20 md:pr-8">
             <div className="grid grid-cols-1 md:grid-cols-2">
                 <img className="md:h-full object-cover rounded-xl" loading="lazy" src="/smart-sips/machine-on-bar.webp" alt="machine-on-bar" />
                 <div className="flex flex-col items-start px-4 md:px-0 md:pl-8 lg:pl-20 lg:pr-56 mt-6 md:mt-0">

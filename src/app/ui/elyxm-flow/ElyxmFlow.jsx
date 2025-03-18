@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 const ElyxmFlow = () => {
   const t = useTranslations("elyxmFlow");
   return (
-    <section className="bg-[#f5f5f7] md:pt-16">
+    <section className="bg-[#f5f5f7] md:pt-16 md:pr-8">
       <div className="flex justify-center items-center lg:flex-row md:flex-row flex-col">
         <div className="w-full md:w-1/2">
           <Video />

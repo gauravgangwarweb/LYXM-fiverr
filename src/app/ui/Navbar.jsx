@@ -11,6 +11,7 @@ import {
 import { FaXmark, FaTwitter } from "react-icons/fa6";
 import { useLocale } from "next-intl";
 import { ChangeEvent, useTransition } from 'react';
+import { useScrollLock } from '@/hooks/useScrollLock';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,6 +20,9 @@ const Navbar = () => {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const localActive = useLocale();
+
+  // Add the scroll lock hook
+  useScrollLock(showMenu);
 
   const languages = [
     { code: "en", flag: "/eng-flag.png", label: "English" },
@@ -71,9 +75,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <button onClick={() => setShowMenu(!showMenu)}>
             {showMenu ? (
-              <FaXmark className="text-white text-3xl" />
+              <FaXmark className="text-white text-4xl font-black" />
             ) : (
-              <FaGripLines className="text-white text-3xl" />
+              <FaGripLines className="text-white text-4xl font-black" />
             )}
           </button>
           <img className="w-32" src="/logo.png" alt="logo" />
