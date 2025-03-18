@@ -9,7 +9,7 @@ export async function POST(request) {
 
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: email,
+      to: "jorge@elyxm.com",
       subject: 'Vestaboard Specification Sheet',
       html: `<p>Thank you for requesting the specification sheet.</p>
             <p>Here's your download link: [Add your spec sheet link here]</p>`

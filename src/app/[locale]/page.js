@@ -1,6 +1,6 @@
 import ElyxmFlow from "../ui/elyxm-flow/ElyxmFlow";
 import Features from "../ui/features/Features";
-import Footer from "../ui/Footer";
+import Footer from "../ui/footer/Footer";
 import Hero from "../ui/hero/Hero";
 import MeetOurCus from "../ui/meet-our-cus/MeetOurCus";
 import Newsroom from "../ui/newsroom/Newsroom";

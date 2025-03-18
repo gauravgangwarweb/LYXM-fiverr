@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FiYoutube } from "react-icons/fi";
+import FooterForm from "./FooterForm";
 
 const Footer = () => {
   return (
@@ -163,7 +164,8 @@ const Footer = () => {
         </div>
         <div className="">
           <h5 className="text-[24px]">Sign up to get the latest</h5>
-          <form className="flex flex-col mt-4">
+          <FooterForm />
+          {/* <form className="flex flex-col mt-4">
             <div>
               <label htmlFor="first-name">First Name*</label>
               <input
@@ -218,7 +220,7 @@ const Footer = () => {
             <button className="bg-[#f5f5f7] text-[#171818] font-light text-lg py-2 rounded-md mt-4">
               Sign up
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
       <hr className="w-full border-gray-600" />
