@@ -53,7 +53,7 @@ const Newsroom = () => {
           </svg>
         </Link> */}
       </div>
-      <div className="w-full mt-10 md:pl-10 px-0">
+      <div className="w-full mt-10 px-0 md:px-10">
         <NewsCarousel news={newsData} />
       </div>
     </section>

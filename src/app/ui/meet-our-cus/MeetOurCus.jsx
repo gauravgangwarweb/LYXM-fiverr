@@ -44,7 +44,7 @@ const MeetOurCus = () => {
         </h2>
         {/* <Link className="text-white hover:text-[#a0a7ac] border border-white self-center px-3 py-1.5 rounded-md mt-4 md:mt-0" href="#">Learn More</Link> */}
       </div>
-      <div className="w-full mt-10 md:pl-10 px-8 md:px-0">
+      <div className="w-full mt-10 px-8 md:px-8">
         <CustomersCarousel customers={customersData} />
       </div>
     </section>
