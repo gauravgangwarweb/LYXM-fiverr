@@ -60,7 +60,7 @@ const StackedCards = () => {
         <div className="flex flex-col md:flex-row justify-end mt-20 relative">
           <div className="md:py-6 rounded-md">
             <img
-              className="w-72 md:w-96 lg:w-[550px] absolute top-[292px] md:top-0 lg:-top-8 left-8 md:-left-8 lg:-left-10"
+              className="w-72 md:w-96 lg:w-[550px] absolute top-[250px] md:top-0 lg:-top-8 left-8 md:-left-8 lg:-left-10"
               loading="lazy"
               src="/stacked-cards/router.png"
               alt="dashboard"

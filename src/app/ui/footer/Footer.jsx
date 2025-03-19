@@ -5,6 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FiYoutube } from "react-icons/fi";
 import FooterForm from "./FooterForm";
+import ContactUsButton from "@/components/ui/contactusButton";
 
 const Footer = () => {
   return (
@@ -12,106 +13,24 @@ const Footer = () => {
       <div className="flex flex-col-reverse md:flex-row justify-between py-20 px-6 lg:px-24">
         <div className="flex flex-col md:flex-row gap-24 md:gap-12 lg:gap-24">
           <div className="flex flex-col mt-10 md:mt-0">
-            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border py-2.5 group border-foreground bg-transparent hover:bg-foreground hover:border-foreground/40 font-semibold text-foreground hover:text-primaryDark sm:text-lg text-sm px-4 sm:py-5 h-9 max-w-36 transition-colors duration-800 ease-in-out">
-              <span className="flex gap-1">Shop Now</span>
-              <svg
-                class="hidden md:block align-middle transition-transform duration-300 ease-in-out group-hover:translate-x-1"
-                width="1em"
-                height="1em"
-                fill="currentColor"
-                viewBox="0 0 1024 1024"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M133.12 611.84h803.84v51.2H133.12zM806.144 712.3968l32.9472 39.168-237.0048 199.4752-32.9728-39.168z"></path>
-                <path d="M658.0992 276.4544l283.5968 336.7936-39.168 32.9728-283.5968-336.7936z"></path>
-              </svg>
-            </button>
+            <ContactUsButton />
             <hr className="border-gray-500 mt-5" />
             <div className="mt-5 flex flex-col">
               <Link className="text-[#f5f5f7] hover:text-[#a0a7ac]" href="/">
-                Vestaboard
-              </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
-                Vestaboard White
-              </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
-                Product Detail
-              </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
-                Software
-              </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
                 Meet Our Customers
               </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
-                At Home
+              <Link className="text-[#f5f5f7] hover:text-[#a0a7ac]" href="/">
+                FAQ
               </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
-                At Work
-              </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
-                A&D / Trade
-              </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
-                Dealers / Resellers
-              </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
-                Refurbished
-              </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
-                Inspire Community
-              </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
-                FAQs
-              </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
-                Developers
-              </Link>
-              <Link
-                className="text-[#f5f5f7] hover:text-[#a0a7ac] mt-1"
-                href="/"
-              >
+              <Link className="text-[#f5f5f7] hover:text-[#a0a7ac]" href="/">
                 Invest
+              </Link>
+              <Link className="text-[#f5f5f7] hover:text-[#a0a7ac]" href="/">
+                Legal
               </Link>
             </div>
           </div>
-          <div className="flex flex-col mt-10 md:mt-0">
+          {/* <div className="flex flex-col mt-10 md:mt-0">
             <Link
               className="flex items-center text-[#f5f5f7] hover:text-[#a0a7ac] py-2.5  sm:py-5 h-9 max-w-36"
               href="#"
@@ -160,9 +79,9 @@ const Footer = () => {
                 Legal
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
-        <div className="">
+        <div className="md:w-[400px]">
           <h5 className="text-[24px]">Sign up to get the latest</h5>
           <FooterForm />
           {/* <form className="flex flex-col mt-4">
@@ -252,7 +171,7 @@ const Footer = () => {
             />
           </Link>
           <p className="text-xs text-[#f5f5f7] mt-2">
-          Copyright © 2025, ELYXM, Inc.
+            Copyright © 2025, ELYXM, Inc.
           </p>
         </div>
       </div>

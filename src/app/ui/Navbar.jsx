@@ -16,6 +16,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import ContactUsButton from "@/components/ui/contactusButton";
 
 const Navbar = () => {
   const [showLangDropdown, setShowLangDropdown] = useState(false);
@@ -93,22 +94,7 @@ const Navbar = () => {
               </SheetTrigger>
             </div>
             <div className="z-50 pl-[74px] py-8 mt-14 h-full overflow-y-auto">
-              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border py-3 group border-foreground bg-transparent hover:bg-foreground hover:border-foreground/40 font-semibold text-foreground hover:text-primaryDark sm:text-lg text-sm px-4 sm:py-5 h-12 max-w-36 transition-colors duration-800 ease-in-out">
-                <span className="flex gap-1">
-                  Shop <span className="hidden md:block">Now</span>
-                </span>
-                <svg
-                  class="hidden md:block align-middle transition-transform duration-300 ease-in-out group-hover:translate-x-1"
-                  width="1em"
-                  height="1em"
-                  fill="currentColor"
-                  viewBox="0 0 1024 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M133.12 611.84h803.84v51.2H133.12zM806.144 712.3968l32.9472 39.168-237.0048 199.4752-32.9728-39.168z"></path>
-                  <path d="M658.0992 276.4544l283.5968 336.7936-39.168 32.9728-283.5968-336.7936z"></path>
-                </svg>
-              </button>
+              <ContactUsButton />
               <div className="mt-8 flex flex-col gap-3 text-[#f5f5f7] font-bold text-xl">
                 <button className="text-left hover:opacity-80">Home</button>
                 <button className="text-left hover:opacity-80">Vestaboard</button>
@@ -164,22 +150,7 @@ const Navbar = () => {
         
         <div className="flex gap-0 md:gap-4 items-center">
           <LanguageDropdown />
-          <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border py-2 group border-foreground bg-transparent hover:bg-foreground hover:border-foreground/40 font-semibold text-foreground hover:text-primaryDark sm:text-lg text-sm px-4 sm:py-5 h-9 max-w-36 transition-colors duration-800 ease-in-out">
-            <span className="flex gap-1">
-              Shop <span className="hidden md:block">Now</span>
-            </span>
-            <svg
-              class="hidden md:block align-middle transition-transform duration-300 ease-in-out group-hover:translate-x-1"
-              width="1em"
-              height="1em"
-              fill="currentColor"
-              viewBox="0 0 1024 1024"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M133.12 611.84h803.84v51.2H133.12zM806.144 712.3968l32.9472 39.168-237.0048 199.4752-32.9728-39.168z"></path>
-              <path d="M658.0992 276.4544l283.5968 336.7936-39.168 32.9728-283.5968-336.7936z"></path>
-            </svg>
-          </button>
+          <ContactUsButton />
         </div>
       </div>
     </header>
