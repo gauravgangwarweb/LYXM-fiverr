@@ -2,37 +2,54 @@
 import React, { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+
+const formSchema = z.object({
+  email: z.string().email("Please enter a valid email"),
+  roles: z.array(z.string()).min(1, "Please select at least one option"),
+});
 
 const SignupCta = () => {
-  const [email, setEmail] = useState("");
-  const [isContractor, setIsContractor] = useState(false);
-  const [status, setStatus] = useState("idle"); // idle, loading, success, error
+  const [status, setStatus] = useState("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("loading");
+  const form = useForm({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      email: "",
+      roles: [],
+    },
+  });
 
+  const handleSubmit = async (data) => {
     try {
+      setStatus("loading");
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, isContractor }),
+        body: JSON.stringify({
+          email: data.email,
+          roles: data.roles,
+        }),
       });
 
-      const data = await response.json();
+      const result = await response.json();
 
-      if (data.success) {
+      if (result.success) {
         setStatus("success");
+        form.reset();
       } else {
         setStatus("error");
-        setErrorMessage(data.error || "Something went wrong");
+        setErrorMessage(result.error || "Failed to send request");
       }
     } catch (error) {
       setStatus("error");
-      setErrorMessage("Failed to send email");
+      setErrorMessage("An error occurred. Please try again.");
     }
   };
 
@@ -61,42 +78,135 @@ const SignupCta = () => {
           </p>
         </div>
         <div className="mt-4">
-          <form onSubmit={handleSubmit} className="lg:w-[400px] flex flex-col">
-            <Input 
-              type="email" 
-              placeholder="Email" 
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-            <div className="flex items-center space-x-2 mt-5">
-              <Checkbox 
-                id="terms2" 
-                checked={isContractor}
-                onCheckedChange={setIsContractor}
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(handleSubmit)} className="lg:w-[400px] flex flex-col">
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Input 
+                        type="email" 
+                        placeholder="Email" 
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
               />
-              <label
-                htmlFor="terms2"
-                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+
+              <FormField
+                control={form.control}
+                name="roles"
+                render={() => (
+                  <FormItem className="mt-5">
+                    <div className="grid grid-cols-2 gap-4">
+                      {/* Left Column */}
+                      <div className="space-y-4">
+                        <div className="flex items-center space-x-2">
+                          <FormControl>
+                            <Checkbox
+                              checked={form.watch("roles").includes("architect")}
+                              onCheckedChange={(checked) => {
+                                const roles = form.watch("roles");
+                                if (checked) {
+                                  form.setValue("roles", [...roles, "architect"]);
+                                } else {
+                                  form.setValue("roles", roles.filter(role => role !== "architect"));
+                                }
+                              }}
+                            />
+                          </FormControl>
+                          <FormLabel className="text-sm font-medium leading-none">
+                            I'm an Architect
+                          </FormLabel>
+                        </div>
+
+                        <div className="flex items-center space-x-2">
+                          <FormControl>
+                            <Checkbox
+                              checked={form.watch("roles").includes("designer")}
+                              onCheckedChange={(checked) => {
+                                const roles = form.watch("roles");
+                                if (checked) {
+                                  form.setValue("roles", [...roles, "designer"]);
+                                } else {
+                                  form.setValue("roles", roles.filter(role => role !== "designer"));
+                                }
+                              }}
+                            />
+                          </FormControl>
+                          <FormLabel className="text-sm font-medium leading-none">
+                            I'm a Designer
+                          </FormLabel>
+                        </div>
+                      </div>
+
+                      {/* Right Column */}
+                      <div className="space-y-4">
+                        <div className="flex items-center space-x-2">
+                          <FormControl>
+                            <Checkbox
+                              checked={form.watch("roles").includes("contractor")}
+                              onCheckedChange={(checked) => {
+                                const roles = form.watch("roles");
+                                if (checked) {
+                                  form.setValue("roles", [...roles, "contractor"]);
+                                } else {
+                                  form.setValue("roles", roles.filter(role => role !== "contractor"));
+                                }
+                              }}
+                            />
+                          </FormControl>
+                          <FormLabel className="text-sm font-medium leading-none">
+                            I'm a Contractor
+                          </FormLabel>
+                        </div>
+
+                        <div className="flex items-center space-x-2">
+                          <FormControl>
+                            <Checkbox
+                              checked={form.watch("roles").includes("other")}
+                              onCheckedChange={(checked) => {
+                                const roles = form.watch("roles");
+                                if (checked) {
+                                  form.setValue("roles", [...roles, "other"]);
+                                } else {
+                                  form.setValue("roles", roles.filter(role => role !== "other"));
+                                }
+                              }}
+                            />
+                          </FormControl>
+                          <FormLabel className="text-sm font-medium leading-none">
+                            Other
+                          </FormLabel>
+                        </div>
+                      </div>
+                    </div>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              {status === "error" && (
+                <p className="mt-2 text-red-500 text-sm">{errorMessage}</p>
+              )}
+
+              <button
+                type="submit"
+                disabled={status === "loading"}
+                className={`mt-[18px] px-4 py-3 w-full md:w-fit rounded-md
+                  ${status === "loading" 
+                    ? "bg-gray-400 cursor-not-allowed" 
+                    : "bg-[#f5f5f7] text-[#0a0a0b] hover:bg-[#e5e5e7]"
+                  }`}
               >
-                I'm an architect, designer or contractor
-              </label>
-            </div>
-            {status === "error" && (
-              <p className="mt-2 text-red-500 text-sm">{errorMessage}</p>
-            )}
-            <button
-              type="submit"
-              disabled={status === "loading"}
-              className={`mt-[18px] px-4 py-3 w-full md:w-fit rounded-md
-                ${status === "loading" 
-                  ? "bg-gray-400 cursor-not-allowed" 
-                  : "bg-[#f5f5f7] text-[#0a0a0b] hover:bg-[#e5e5e7]"
-                }`}
-            >
-              {status === "loading" ? "Sending..." : "Download"}
-            </button>
-          </form>
+                {status === "loading" ? "Sending..." : "Download"}
+              </button>
+            </form>
+          </Form>
         </div>
       </div>
     </section>
