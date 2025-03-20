@@ -72,7 +72,7 @@ const Navbar = () => {
   );
 
   return (
-    <header className="bg-black/80 fixed top-0 z-[200] w-full border-b border-transparent transition-colors duration-200 px-4 md:px-8 py-4">
+    <header className="bg-black/80 fixed top-0 z-40 w-full border-b border-transparent transition-colors duration-200 px-4 md:px-8 py-4">
       <div className="flex justify-between items-center">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           {

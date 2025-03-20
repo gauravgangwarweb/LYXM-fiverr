@@ -61,7 +61,7 @@ const SignupCta = () => {
           </p>
         </div>
         <div className="mt-4">
-          <form onSubmit={handleSubmit} className="md:w-[400px] flex flex-col">
+          <form onSubmit={handleSubmit} className="lg:w-[400px] flex flex-col">
             <Input 
               type="email" 
               placeholder="Email" 

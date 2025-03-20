@@ -4,13 +4,25 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { checkScreenSize } from '@/lib/utils';
 
 export default function CustomersCarousel({customers}) {
   const [screenSize, setScreenSize] = useState('mobile');
   const swiperRef = useRef(null);
 
-  useEffect(() => {    
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const width = window.innerWidth;
+      if (width < 768) {
+        setScreenSize('mobile');
+      } else if (width < 1024) {
+        setScreenSize('tablet');
+      } else if (width < 1440) {
+        setScreenSize('desktop');
+      } else {
+        setScreenSize('large');
+      }
+    };
+    
     checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
     return () => window.removeEventListener('resize', checkScreenSize);

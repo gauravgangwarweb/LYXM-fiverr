@@ -1,7 +1,9 @@
 'use client';
 import { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
 
 const NewsCarousel = ({news}) => {
   const [screenSize, setScreenSize] = useState('desktop');
@@ -14,8 +16,10 @@ const NewsCarousel = ({news}) => {
         setScreenSize('mobile');
       } else if (width < 1024) {
         setScreenSize('tablet');
-      } else {
+      } else if (width < 1440) {
         setScreenSize('desktop');
+      } else {
+        setScreenSize('large');
       }
     };
     
@@ -29,9 +33,13 @@ const NewsCarousel = ({news}) => {
       case 'mobile':
         return 1;
       case 'tablet':
-        return 1.7;
-      default:
+        return 2;
+      case 'desktop':
+        return 2;
+      case 'large':
         return 3;
+      default:
+        return 1;
     }
   };
 
@@ -39,9 +47,14 @@ const NewsCarousel = ({news}) => {
     <div className="w-full relative">
       <Swiper
         ref={swiperRef}
+        modules={[Navigation]}
         slidesPerView={getSlidesPerView()}
-        spaceBetween={screenSize === 'mobile' ? 40 : 50}
-        className="!h-auto"
+        spaceBetween={screenSize === 'mobile' ? 20 : 40}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
+        className="!h-auto relative"
       >
         <div className="swiper-wrapper !h-auto">
           {news.map((news, index) => (
@@ -56,7 +69,7 @@ const NewsCarousel = ({news}) => {
                   />
                 </div>
                 <div className="p-8 flex-1 flex flex-col">
-                  <h5 className="text-[#1e2022] text-lg md:text-2xl mb-20 flex-grow">
+                  <h5 className="text-[#1e2022] text-lg md:text-xl lg:text-2xl mb-20 flex-grow">
                     {news.title}
                   </h5>
                   <div className="absolute flex items-center gap-2 bottom-4 left-6">
@@ -74,6 +87,10 @@ const NewsCarousel = ({news}) => {
             </SwiperSlide>
           ))}
         </div>
+        <button className="swiper-button-prev !w-10 !h-10 !bg-gray-800 !rounded-full after:!text-lg after:!text-white hover:!bg-gray-700 !top-[30%] md:!top-[29%] lg:!top-[40%]">
+        </button>
+        <button className="swiper-button-next !w-10 !h-10 !bg-gray-800 !rounded-full after:!text-lg after:!text-white hover:!bg-gray-700 !top-[30%] md:!top-[29%] lg:!top-[40%]">
+        </button>
       </Swiper>
     </div>
   );
