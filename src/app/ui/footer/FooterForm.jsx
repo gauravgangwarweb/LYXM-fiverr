@@ -128,7 +128,6 @@ const FooterForm = () => {
             </FormItem>
           )}
         />
-
         <FormField
           control={form.control}
           name="interests"
@@ -137,55 +136,107 @@ const FooterForm = () => {
               <FormLabel className="text-[#f5f5f7]">
                 I am interested in Vestaboard:*
               </FormLabel>
-              <div className="mt-2 space-y-2">
-                <FormField
-                  control={form.control}
-                  name="interests"
-                  render={({ field }) => (
-                    <FormItem className="flex items-center space-x-2">
-                      <FormControl>
-                        <Checkbox
-                          checked={field.value?.includes("home")}
-                          onCheckedChange={(checked) => {
-                            const values = field.value || [];
-                            if (checked) {
-                              field.onChange([...values, "home"]);
-                            } else {
-                              field.onChange(values.filter((v) => v !== "home"));
-                            }
-                          }}
-                        />
-                      </FormControl>
-                      <FormLabel className="text-[#f5f5f7] font-normal">
-                        At home
-                      </FormLabel>
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="interests"
-                  render={({ field }) => (
-                    <FormItem className="flex items-center space-x-2">
-                      <FormControl>
-                        <Checkbox
-                          checked={field.value?.includes("work")}
-                          onCheckedChange={(checked) => {
-                            const values = field.value || [];
-                            if (checked) {
-                              field.onChange([...values, "work"]);
-                            } else {
-                              field.onChange(values.filter((v) => v !== "work"));
-                            }
-                          }}
-                        />
-                      </FormControl>
-                      <FormLabel className="text-[#f5f5f7] font-normal">
-                        At work
-                      </FormLabel>
-                    </FormItem>
-                  )}
-                />
+              <div className="mt-2 grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div className="space-y-2">
+                  <FormField
+                    control={form.control}
+                    name="interests"
+                    render={({ field }) => (
+                      <FormItem className="flex items-center space-x-2">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value?.includes("concerts_&_festivals")}
+                            onCheckedChange={(checked) => {
+                              const values = field.value || [];
+                              if (checked) {
+                                field.onChange([...values, "concerts_&_festivals"]);
+                              } else {
+                                field.onChange(values.filter((v) => v !== "concerts_&_festivals"));
+                              }
+                            }}
+                          />
+                        </FormControl>
+                        <FormLabel className="text-[#f5f5f7] font-normal">
+                          Concerts & Festivals
+                        </FormLabel>
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="interests"
+                    render={({ field }) => (
+                      <FormItem className="flex items-center space-x-2">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value?.includes("weddings_&_celebrations ")}
+                            onCheckedChange={(checked) => {
+                              const values = field.value || [];
+                              if (checked) {
+                                field.onChange([...values, "weddings_&_celebrations "]);
+                              } else {
+                                field.onChange(values.filter((v) => v !== "weddings_&_celebrations "));
+                              }
+                            }}
+                          />
+                        </FormControl>
+                        <FormLabel className="text-[#f5f5f7] font-normal">
+                          Weddings & Celebrations 
+                        </FormLabel>
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                <div className="space-y-2">
+                  <FormField
+                    control={form.control}
+                    name="interests"
+                    render={({ field }) => (
+                      <FormItem className="flex items-center space-x-2">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value?.includes("spiritbrands_&_activations")}
+                            onCheckedChange={(checked) => {
+                              const values = field.value || [];
+                              if (checked) {
+                                field.onChange([...values, "spiritbrands_&_activations"]);
+                              } else {
+                                field.onChange(values.filter((v) => v !== "spiritbrands_&_activations"));
+                              }
+                            }}
+                          />
+                        </FormControl>
+                        <FormLabel className="text-[#f5f5f7] font-normal">
+                        Spirit Brands & Activations
+                        </FormLabel>
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="interests"
+                    render={({ field }) => (
+                      <FormItem className="flex items-center space-x-2">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value?.includes("corporate_&_conferences")}
+                            onCheckedChange={(checked) => {
+                              const values = field.value || [];
+                              if (checked) {
+                                field.onChange([...values, "corporate_&_conferences"]);
+                              } else {
+                                field.onChange(values.filter((v) => v !== "corporate_&_conferences"));
+                              }
+                            }}
+                          />
+                        </FormControl>
+                        <FormLabel className="text-[#f5f5f7] font-normal">
+                        Corporate & Conferences
+                        </FormLabel>
+                      </FormItem>
+                    )}
+                  />
+                </div>
               </div>
               <FormMessage />
             </FormItem>

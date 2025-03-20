@@ -57,7 +57,7 @@ const SignupCta = () => {
             Request the spec sheet
           </h2>
           <p className="mt-2 text-lg text-[#a0a7ac]">
-            Download our latest specification sheet for Vestaboard.
+            Download our latest specification sheet for Elyxm.
           </p>
         </div>
         <div className="mt-4">

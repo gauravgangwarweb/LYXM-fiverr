@@ -4,30 +4,44 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { checkScreenSize } from '@/lib/utils';
 
 export default function CustomersCarousel({customers}) {
-  const [isMobile, setIsMobile] = useState(false);
+  const [screenSize, setScreenSize] = useState('mobile');
   const swiperRef = useRef(null);
 
-  useEffect(() => {
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    
-    checkIfMobile();
-    window.addEventListener('resize', checkIfMobile);
-    return () => window.removeEventListener('resize', checkIfMobile);
+  useEffect(() => {    
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
+
+  const getSlidesPerView = () => {
+    switch (screenSize) {
+      case 'mobile':
+        return 1;
+      case 'tablet':
+        return 2;
+      case 'desktop':
+        return 3;
+      case 'large':
+        return 4;
+      default:
+        return 1;
+    }
+  };
+
+  const getSpaceBetween = () => {
+    return screenSize === 'mobile' ? 20 : 40;
+  };
 
   return (
     <div className="w-full relative">
       <Swiper
         ref={swiperRef}
         modules={[Navigation, Autoplay]}
-        slidesPerView={isMobile ? 1 : 3.5}
-        spaceBetween={isMobile ? 0 : 40}
-        // loop={true}
-        // speed={1000}
+        slidesPerView={getSlidesPerView()}
+        spaceBetween={getSpaceBetween()}
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -57,9 +71,9 @@ export default function CustomersCarousel({customers}) {
         ))}
         
         {/* Custom Navigation Buttons */}
-        <button className="swiper-button-prev !w-10 !h-10 !bg-gray-800 !rounded-full after:!text-lg after:!text-white hover:!bg-gray-700 !top-[38%] md:!top-[20%] lg:!top-[40%]">
+        <button className="swiper-button-prev !w-10 !h-10 !bg-gray-800 !rounded-full after:!text-lg after:!text-white hover:!bg-gray-700 !top-[30%] md:!top-[29%] lg:!top-[40%]">
         </button>
-        <button className="swiper-button-next !w-10 !h-10 !bg-gray-800 !rounded-full after:!text-lg after:!text-white hover:!bg-gray-700 !top-[38%] md:!top-[20%] lg:!top-[40%]">
+        <button className="swiper-button-next !w-10 !h-10 !bg-gray-800 !rounded-full after:!text-lg after:!text-white hover:!bg-gray-700 !top-[30%] md:!top-[29%] lg:!top-[40%]">
         </button>
       </Swiper>
     </div>
