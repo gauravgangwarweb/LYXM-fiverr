@@ -53,5 +53,18 @@
         "author2": "NotiUltimas",
         "title3": "Para los amantes de los cocteles llega Mixología a RD, la barra inteligente",
         "author3": "Aldrys Sánchez"
+    },
+    "signUpForm": {
+        "field1": "Nombre*",
+        "field2": "Apellido*",
+        "field3": "Correo electrónico*",
+        "field4": "País*",
+        "field5": {
+            "option1": "Conciertos y Festivales",
+            "option2": "Bodas y Celebraciones",
+            "option3": "Marcas de Bebidas y Activaciones",
+            "option4": "Corporativo y Conferencias"
+        },
+        "buttonText": "Schedule a Tasting"
     }
 }

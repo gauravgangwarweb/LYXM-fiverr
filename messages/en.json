@@ -53,5 +53,18 @@
         "author2": "NotiUltimas",
         "title3": "For cocktail lovers, Smart Mixology arrives in the Dominican Republic",
         "author3": "Aldrys Sánchez"
+    },
+    "signUpForm": {
+        "field1": "First Name*",
+        "field2": "Last Name*",
+        "field3": "Email*",
+        "field4": "Country*",
+        "field5": {
+            "option1": "Concerts & Festivals",
+            "option2": "Weddings & Celebrations",
+            "option3": "Spirit Brands & Activations",
+            "option4": "Corporate & Conferences"
+        },
+        "buttonText": "Schedule a Tasting"
     }
 }
