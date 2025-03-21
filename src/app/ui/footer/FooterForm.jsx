@@ -23,6 +23,7 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { countries } from "@/lib/countries";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const formSchema = z.object({
   firstname: z.string().min(2, "First name is required"),
@@ -33,6 +34,8 @@ const formSchema = z.object({
 });
 
 const FooterForm = () => {
+  const t = useTranslations("signUpForm")
+  
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
 
@@ -88,7 +91,7 @@ const FooterForm = () => {
             name="firstname"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-[#f5f5f7]">First Name*</FormLabel>
+                <FormLabel className="text-[#f5f5f7]">{t("field1")}</FormLabel>
                 <FormControl>
                   <Input
                     {...field}
