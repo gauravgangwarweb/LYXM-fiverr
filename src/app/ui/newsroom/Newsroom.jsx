@@ -11,7 +11,8 @@ const Newsroom = () => {
       author: {
           name: "RC Noticias",
           image: "/newsroom/demo-img.webp",
-      }
+      },
+      link: "https://robertocavada.com/tecnologia/2025/01/24/elyxm-la-primera-barra-inteligente-disenada-y-fabricada-en-republica-dominicana/"
     },
     {
       image: "/newsroom/notiultimas.png",
@@ -19,7 +20,8 @@ const Newsroom = () => {
       author: {
           name: "NotiUltimas",
           image: "/newsroom/demo-img.webp",
-      }
+      },
+      link: "https://notiultimas.com/elyxm-la-primera-barra-inteligente-disenada-y-fabricada-en-republica-dominicana/"
     },
     {
       image: "/newsroom/machine-at-monica-varela.png",
@@ -27,7 +29,8 @@ const Newsroom = () => {
       author: {
           name: "Aldrys Sánchez",
           image: "/newsroom/demo-img.webp",
-      }
+      },
+      link: "https://3chismesy1cafe.com/2025/01/22/para-los-amantes-de-los-cocteles-llega-mixologia-a-rd-la-barra-inteligente/"
     },
     // Add more news items as needed
   ];
