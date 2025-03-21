@@ -9,8 +9,13 @@ const SmartSips = () => {
                 <img className="md:h-full object-cover rounded-xl" loading="lazy" src="/smart-sips/machine-on-bar.webp" alt="machine-on-bar" />
                 <div className="flex flex-col items-start px-4 md:px-0 md:pl-8 lg:pl-20 xl:pr-52 lg:pr-4 mt-6 md:mt-0">
                     <h2 className="text-3xl font-normal leading-tight tracking-tight text-primaryDark lg:text-[56px]">{t("title")}</h2>
-                    <p class="mb-8 text-lg leading-relaxed font-normal text-[#a0a7ac] mt-4">{t("discription")}</p>
-                    {/* <Link class="group inline-flex items-center gap-3 hover:opacity-8 text-primaryDark" href="#"><span class="pb-1 border-b border-background">Shop Now</span><svg class="align-middle transition-transform duration-300 ease-in-out group-hover:translate-x-1" width="24" height="24" fill="currentColor" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M133.12 611.84h803.84v51.2H133.12zM806.144 712.3968l32.9472 39.168-237.0048 199.4752-32.9728-39.168z"></path><path d="M658.0992 276.4544l283.5968 336.7936-39.168 32.9728-283.5968-336.7936z"></path></svg></Link> */}
+                    <p class="text-lg leading-relaxed font-normal text-[#a0a7ac] mt-4">{t("discription")}</p>
+                    <div className="text-lg leading-relaxed font-normal text-[#a0a7ac] mt-3 mb-10">
+                        <p>{t("point1")}</p>
+                        <p>{t("point2")}</p>
+                        <p>{t("point3")}</p>
+                        <p>{t("point4")}</p>
+                    </div>
                 </div>
             </div>
         </section>

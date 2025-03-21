@@ -35,7 +35,7 @@ const NewsCarousel = ({news}) => {
       case 'tablet':
         return 2;
       case 'desktop':
-        return 2;
+        return 3;
       case 'large':
         return 3;
       default:

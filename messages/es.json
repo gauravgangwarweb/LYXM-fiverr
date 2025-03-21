@@ -5,10 +5,14 @@
     },
     "smartSips": {
         "title": "La Revolución del Cóctel",
-        "discription": "Con una precisión de 1/16 de onza, vertidos en 5 segundos y un menú curado de más de 250 opciones de cócteles, provenientes de mixólogos de todo el mundo, ofrecemos experiencias de bebida a medida. Cada vertido se adapta de forma única y se potencia con datos en tiempo real y aprendizaje automático innovador."
+        "discription": "Ofrecemos experiencias de bebidas personalizadas, cada una diseñada exclusivamente a tu gusto",
+        "point1": "✔️ Precisión de 1/16 de onza",
+        "point2": "✔️ Vertidos en 5 segundos",
+        "point3": "✔️ Más de 250 cócteles precargados",
+        "point4": "✔️ Información en tiempo real basada en datos"
     },
     "elyxmFlow": {
-        "title": "La Experiencia para Eventos",
+        "title": "Presentamos Elyxm Flow: Redefiniendo la experiencia de eventos",
         "discription": "Imagina tu evento transformado por una mixología de precisión que da vida a cada cóctel en tiempo real. Ya sea que organices un concierto, festival, conferencia o un evento exclusivo, disfruta de una celebración inmersiva donde cada bebida eleva tu experiencia y crea momentos inolvidables."
     },
     "features": {
@@ -41,5 +45,13 @@
         "solution3": "Las recetas personalizables de Elyxm permiten a Monica Varela emparejar cócteles exclusivos con sus diseños, realzando los eventos en tienda a través de la sinergia entre el sabor y la estética",
         "challenge4": "Ofrecer cócteles de calidad en un ambiente ruidoso y de estilo club, que previamente limitaba las opciones de bebidas",
         "solution4": "Our streamlined system operates quickly and efficiently, enabling El Cielo to expand its menu from basic oNuestro sistema optimizado opera de manera rápida y eficiente, permitiendo a Cielo ampliar su menú desde opciones básicas hasta una oferta completa de cócteles, sin incrementar la complejidad ni los tiempos de espera"
+    },
+    "newsRoom": {
+        "title1": "Elyxm: La primera barra inteligente diseñada y fabricada en República Dominicana",
+        "author1": "RC Noticias",
+        "title2": "Elyxm: La barra inteligente pionera de la República Dominicana, diseñada y fabricada localmente",
+        "author2": "NotiUltimas",
+        "title3": "Para los amantes de los cocteles llega Mixología a RD, la barra inteligente",
+        "author3": "Aldrys Sánchez"
     }
 }

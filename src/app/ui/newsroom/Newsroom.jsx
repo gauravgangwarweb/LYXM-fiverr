@@ -1,35 +1,36 @@
 import Link from "next/link";
 import NewsCarousel from "./NewsCarousel";
-
-const newsData = [
-  {
-    image: "/newsroom/roberto-cavada.png",
-    title: "Inspired by the resilience of our Los Angeles community",
-    author: {
-        name: "Maddie Frame",
-        image: "/newsroom/demo-img.webp",
-    }
-  },
-  {
-    image: "/newsroom/notiultimas.png",
-    title: "Vestaboard Partners with NBPA to inspire players, teams and community",
-    author: {
-        name: "Maddie Frame",
-        image: "/newsroom/demo-img.webp",
-    }
-  },
-  {
-    image: "/newsroom/machine-at-monica-varela.png",
-    title: "Vestaboard White features in Cool Material's Holiday Gift Guide",
-    author: {
-        name: "Maddie Frame",
-        image: "/newsroom/demo-img.webp",
-    }
-  },
-  // Add more news items as needed
-];
+import { useTranslations } from "next-intl";
 
 const Newsroom = () => {
+  const t = useTranslations("newsRoom");
+  const newsData = [
+    {
+      image: "/newsroom/roberto-cavada.png",
+      title: `${t("title1")}`,
+      author: {
+          name: "RC Noticias",
+          image: "/newsroom/demo-img.webp",
+      }
+    },
+    {
+      image: "/newsroom/notiultimas.png",
+      title: `${t("title2")}`,
+      author: {
+          name: "NotiUltimas",
+          image: "/newsroom/demo-img.webp",
+      }
+    },
+    {
+      image: "/newsroom/machine-at-monica-varela.png",
+      title: `${t("title3")}`,
+      author: {
+          name: "Aldrys Sánchez",
+          image: "/newsroom/demo-img.webp",
+      }
+    },
+    // Add more news items as needed
+  ];
   return (
     <section className="bg-[#171918] px-4 md:px-8 py-20">
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8">

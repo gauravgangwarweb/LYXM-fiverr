@@ -8,6 +8,7 @@ import {
   FaInstagram,
   FaYoutube,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaXmark, FaTwitter } from "react-icons/fa6";
 import { useLocale } from "next-intl";
 import { useTransition } from 'react';
@@ -77,9 +78,9 @@ const Navbar = () => {
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           {
             isOpen ? <SheetTrigger>
-            <FaXmark className="text-inherit text-2xl md:text-4xl font-black" />
+            <FaXmark className="relative z-50 text-inherit text-2xl md:text-4xl font-black" />
           </SheetTrigger> : <SheetTrigger className={`relative z-50 ${isOpen ? 'hidden' : 'block'}`}>
-            <FaGripLines className="text-white text-2xl md:text-4xl font-black" />
+            <FaGripLines className="relative z-50 text-white text-2xl md:text-4xl font-black" />
           </SheetTrigger>
           }
           
@@ -90,46 +91,24 @@ const Navbar = () => {
           >
             <div className="fixed top-4 left-4 md:left-8 z-50">
               <SheetTrigger>
-                <FaXmark className="text-black/80 text-4xl font-black" />
+                <FaXmark className="text-white text-4xl font-black" />
               </SheetTrigger>
             </div>
             <div className="z-50 pl-[74px] py-8 mt-14 h-full overflow-y-auto">
               <ContactUsButton />
               <div className="mt-8 flex flex-col gap-3 text-[#f5f5f7] font-bold text-xl">
-                <button className="text-left hover:opacity-80">Home</button>
-                <button className="text-left hover:opacity-80">Vestaboard</button>
+                <button className="text-left hover:opacity-80">Meet Our Customers</button>
+                <button className="text-left hover:opacity-80">FAQ</button>
                 <button className="text-left hover:opacity-80">
-                  Vestaboard White
+                  Invest
                 </button>
                 <button className="text-left hover:opacity-80">
-                  Product Detail
+                  Legal
                 </button>
-                <button className="text-left hover:opacity-80">Software</button>
-                <button className="text-left hover:opacity-80">
-                  Meet Our Customers
-                </button>
-                <button className="text-left hover:opacity-80">At Home</button>
-                <button className="text-left hover:opacity-80">At Work</button>
-                <button className="text-left hover:opacity-80">A&D / Trade</button>
-                <button className="text-left hover:opacity-80">
-                  Dealer Program
-                </button>
-                <hr className="my-3 w-[180px] h-[1px] opacity-50" />
-                <button className="text-left hover:opacity-80">Invest</button>
-                <button className="text-left hover:opacity-80">
-                  For Customers
-                </button>
-                <button className="text-left hover:opacity-80">
-                  Accessories & Install
-                </button>
-                <button className="text-left hover:opacity-80">Newsroom</button>
-                <button className="text-left hover:opacity-80">About Us</button>
-                <button className="text-left hover:opacity-80">Community</button>
-                <hr className="my-3 w-[180px] h-[1px] opacity-50" />
-                <button className="text-left hover:opacity-80">Contact</button>
+                
                 <div className="my-4 flex items-center gap-3">
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <FaTwitter className="text-white text-2xl" />
+                    <FaXTwitter className="text-white text-2xl" />
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
                     <FaFacebook className="text-white text-2xl" />

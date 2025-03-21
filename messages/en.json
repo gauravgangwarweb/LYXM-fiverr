@@ -5,10 +5,14 @@
     },
     "smartSips": {
         "title": "The Cocktail Revolution",
-        "discription": "With 1/16th-of-an-ounce precision, 5-second pours, and a curated menu of over 250 cocktail options sourced from mixologists around the world, we serve up bespoke drink experiences—each pour uniquely tailored and powered by real-time data and innovative machine learning."
+        "discription": "We serve up bespoke drink experiences-each uniquely tailored to your taste",
+        "point1": "✔️ 1/16th ounce precision",
+        "point2": "✔️ 5-second pours",
+        "point3": "✔️ 250+ cocktails preloaded",
+        "point4": "✔️ real-time data insights"
     },
     "elyxmFlow": {
-        "title": "The Event Experience",
+        "title": "Introducing Elyxm Flow: Redefining the Event Experience",
         "discription": "Imagine your event transformed by precision mixology that brings every cocktail to life in real time. Whether you're organizing a concert, festival, conference, or high-profile gathering, enjoy an immersive celebration where each drink elevates your experience and creates unforgettable moments."
     },
     "features": {
@@ -41,5 +45,13 @@
         "solution3": "Elyxm’s customizable recipes allow Monica Varela to pair exclusive cocktails with her designs—enhancing store events through taste and visual synergy.",
         "challenge4": "Offering quality cocktails in a loud, club-like atmosphere that previously limited drink options.",
         "solution4": "Our streamlined system operates quickly and efficiently, enabling El Cielo to expand its menu from basic offerings to a full cocktail range—without increasing complexity or wait times."
+    },
+    "newsRoom": {
+        "title1": "The first smart bar designed and manufactured in the Dominican Republic",
+        "author1": "RC Noticias",
+        "title2": "Elyxm: The Dominican Republic's Trailblazing Smart Bar, Locally Designed and Manufactured",
+        "author2": "NotiUltimas",
+        "title3": "For cocktail lovers, Smart Mixology arrives in the Dominican Republic",
+        "author3": "Aldrys Sánchez"
     }
 }
