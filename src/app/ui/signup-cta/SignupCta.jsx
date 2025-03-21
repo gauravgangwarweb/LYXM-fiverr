@@ -57,7 +57,7 @@ const SignupCta = () => {
     return (
       <section className="md:-mt-12 bg-[#0a0a0b] text-[#f5f5f7] pt-20 md:pt-44 pb-20 px-6 md:px-10">
         <div className="mx-auto max-w-[1440px] text-center">
-          <h2 className="text-2xl md:text-[44px] font-medium">Thank you!</h2>
+          <h2 className="text-2xl md:text-[44px]">Thank you!</h2>
           <p className="mt-4 text-lg text-[#a0a7ac]">
             Check your email for the specification sheet.
           </p>
@@ -70,7 +70,7 @@ const SignupCta = () => {
     <section className="md:-mt-12 bg-[#0a0a0b] text-[#f5f5f7] pt-20 md:pt-44 pb-20 px-6 md:px-10">
       <div className="mx-auto max-w-[1440px] grid grid-cols-1 md:grid-cols-2 md:gap-6">
         <div>
-          <h2 className="text-2xl md:text-[44px] font-medium">
+          <h2 className="text-2xl md:text-[44px]">
             Request the spec sheet
           </h2>
           <p className="mt-2 text-lg text-[#a0a7ac]">

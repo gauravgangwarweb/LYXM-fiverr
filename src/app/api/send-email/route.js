@@ -8,7 +8,7 @@ export async function POST(request) {
     const { email, isContractor } = await request.json();
 
     const data = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'hello@elyxm.com',
       to: "jorge@elyxm.com",
       subject: 'Vestaboard Specification Sheet',
       html: `<p>Thank you for requesting the specification sheet.</p>
