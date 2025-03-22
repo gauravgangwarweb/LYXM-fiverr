@@ -65,6 +65,15 @@
             "option3": "Marcas de Bebidas y Activaciones",
             "option4": "Corporativo y Conferencias"
         },
-        "buttonText": "Schedule a Tasting"
+        "buttonText": "Programa mi degustación"
+    },
+    "buttons": {
+        "contactButton": "Contáctanos"
+    },
+    "sidebarContents": {
+        "meet": "Conoce a nuestros clientes",
+        "faq": "Preguntas Frecuentes (FAQ)",
+        "invest": "Invierte",
+        "legal": "Legal"
     }
 }

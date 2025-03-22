@@ -6,27 +6,52 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FiYoutube } from "react-icons/fi";
 import FooterForm from "./FooterForm";
 import ContactUsButton from "@/components/ui/contactusButton";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("signUpForm")
+  const buttonT = useTranslations("buttons") //for the contact us button
+  const linksText = useTranslations("sidebarContents")
+  
+  // translation text for form
+  const translations = {
+    firstName: t("field1"),
+    lastName: t("field2"),
+    email: t("field3"),
+    country: t("field4"),
+    interests: {
+      interest1: t("field5.option1"),
+      interest2: t("field5.option2"),
+      interest3: t("field5.option3"),
+      interest4: t("field5.option4"),
+    },
+    button: t("buttonText"),
+  }
+  
+  //translation text for contact us button
+  const buttonText = {
+    contactUs: buttonT("contactButton")
+  }
+
   return (
     <footer className="bg-[#0a0a0b]">
       <div className="flex flex-col-reverse md:flex-row justify-between py-20 px-6 lg:px-24">
         <div className="flex flex-col md:flex-row gap-24 md:gap-12 lg:gap-24">
           <div className="flex flex-col mt-10 md:mt-0">
-            <ContactUsButton />
+            <ContactUsButton text={buttonText} />
             <hr className="border-gray-500 mt-5" />
             <div className="mt-5 flex flex-col">
               <Link className="text-[#f5f5f7] hover:text-[#a0a7ac]" href="/">
-                Meet Our Customers
+                {linksText("meet")}
               </Link>
               <Link className="text-[#f5f5f7] hover:text-[#a0a7ac]" href="/">
-                FAQ
+                {linksText("faq")}
               </Link>
               <Link className="text-[#f5f5f7] hover:text-[#a0a7ac]" href="/">
-                Invest
+                {linksText("invest")}
               </Link>
               <Link className="text-[#f5f5f7] hover:text-[#a0a7ac]" href="/">
-                Legal
+                {linksText("legal")}
               </Link>
             </div>
           </div>
@@ -83,7 +108,7 @@ const Footer = () => {
         </div>
         <div className="md:w-[400px]">
           <h5 className="text-[24px]">Sign up to get the latest</h5>
-          <FooterForm />
+          <FooterForm trans={translations} />
           {/* <form className="flex flex-col mt-4">
             <div>
               <label htmlFor="first-name">First Name*</label>

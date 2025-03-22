@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/sheet";
 import ContactUsButton from "@/components/ui/contactusButton";
 
-const Navbar = () => {
+const Navbar = ({buttonText, sidebar}) => {
   const [showLangDropdown, setShowLangDropdown] = useState(false);
   const [isPending, startTransition] = useTransition();
   const [selectedLang, setSelectedLang] = useState("en");
@@ -95,25 +95,25 @@ const Navbar = () => {
               </SheetTrigger>
             </div>
             <div className="z-50 pl-[74px] py-8 mt-14 h-full overflow-y-auto">
-              <ContactUsButton />
+            <ContactUsButton text={buttonText} />
               <div className="mt-8 flex flex-col gap-3 text-[#f5f5f7] font-bold text-xl">
-                <button className="text-left hover:opacity-80">Meet Our Customers</button>
-                <button className="text-left hover:opacity-80">FAQ</button>
+                <button className="text-left hover:opacity-80">{sidebar.link1}</button>
+                <button className="text-left hover:opacity-80">{sidebar.link2}</button>
                 <button className="text-left hover:opacity-80">
-                  Invest
+                  {sidebar.link3}
                 </button>
                 <button className="text-left hover:opacity-80">
-                  Legal
+                  {sidebar.link4}
                 </button>
                 
                 <div className="my-4 flex items-center gap-3">
                   <a href="#" target="_blank" rel="noopener noreferrer">
                     <FaXTwitter className="text-white text-2xl" />
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/profile.php?id=61570435444029" target="_blank" rel="noopener noreferrer">
                     <FaFacebook className="text-white text-2xl" />
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/elyxmbar/" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="text-white text-2xl" />
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
@@ -129,7 +129,7 @@ const Navbar = () => {
         
         <div className="flex gap-0 md:gap-4 items-center">
           <LanguageDropdown />
-          <ContactUsButton />
+          <ContactUsButton text={buttonText} />
         </div>
       </div>
     </header>

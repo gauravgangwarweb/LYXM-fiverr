@@ -1,6 +1,6 @@
 import { roboto } from "../ui/fonts";
-import Navbar from "../ui/Navbar";
 import "../globals.css";
+import NavbarProvider from "../ui/navbar/NavbarProvider";
 
 
 export const metadata = {
@@ -13,7 +13,7 @@ export default async function RootLayout({ children, params}) {
   return (
     <html lang={locale}>
       <body className={`${roboto.className} antialiased`}>
-          <Navbar />
+          <NavbarProvider />
           {children}
       </body>
     </html>

@@ -33,7 +33,7 @@ const formSchema = z.object({
   interests: z.array(z.string()).min(1, "Select at least one option"),
 });
 
-const FooterForm = () => {
+const FooterForm = ({trans}) => {
   
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
@@ -90,7 +90,7 @@ const FooterForm = () => {
             name="firstname"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-[#f5f5f7]">First Name*</FormLabel>
+                <FormLabel className="text-[#f5f5f7]">{trans.firstName}</FormLabel>
                 <FormControl>
                   <Input
                     {...field}
@@ -107,7 +107,7 @@ const FooterForm = () => {
             name="lastname"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-[#f5f5f7]">Last Name*</FormLabel>
+                <FormLabel className="text-[#f5f5f7]">{trans.lastName}</FormLabel>
                 <FormControl>
                   <Input
                     {...field}
@@ -124,7 +124,7 @@ const FooterForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-[#f5f5f7]">Email*</FormLabel>
+                <FormLabel className="text-[#f5f5f7]">{trans.email}</FormLabel>
                 <FormControl>
                   <Input
                     {...field}
@@ -143,7 +143,7 @@ const FooterForm = () => {
             name="country"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-[#f5f5f7]">Country*</FormLabel>
+                <FormLabel className="text-[#f5f5f7]">{trans.country}</FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger className="border-white bg-transparent text-white">
@@ -191,7 +191,7 @@ const FooterForm = () => {
                             />
                           </FormControl>
                           <FormLabel className="text-[#f5f5f7] font-normal">
-                            Concerts & Festivals
+                            {trans.interests.interest1}
                           </FormLabel>
                         </FormItem>
                       )}
@@ -215,7 +215,7 @@ const FooterForm = () => {
                             />
                           </FormControl>
                           <FormLabel className="text-[#f5f5f7] font-normal">
-                            Weddings & Celebrations 
+                          {trans.interests.interest2}
                           </FormLabel>
                         </FormItem>
                       )}
@@ -241,7 +241,7 @@ const FooterForm = () => {
                             />
                           </FormControl>
                           <FormLabel className="text-[#f5f5f7] font-normal">
-                          Spirit Brands & Activations
+                          {trans.interests.interest3}
                           </FormLabel>
                         </FormItem>
                       )}
@@ -265,7 +265,7 @@ const FooterForm = () => {
                             />
                           </FormControl>
                           <FormLabel className="text-[#f5f5f7] font-normal">
-                          Corporate & Conferences
+                          {trans.interests.interest4}
                           </FormLabel>
                         </FormItem>
                       )}
@@ -282,7 +282,7 @@ const FooterForm = () => {
             className="w-full bg-[#f5f5f7] text-[#171818] hover:bg-[#e5e5e7] font-light text-lg"
             disabled={form.formState.isSubmitting}
           >
-            {form.formState.isSubmitting ? "Sending..." : "Sign up"}
+            {form.formState.isSubmitting ? "Sending..." : `${trans.button}`}
           </Button>
 
           {error && (

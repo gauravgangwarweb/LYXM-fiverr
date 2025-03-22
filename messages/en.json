@@ -12,12 +12,12 @@
         "point4": "✔️ real-time data insights"
     },
     "elyxmFlow": {
-        "title": "Introducing Elyxm Flow: Redefining the Event Experience",
+        "title": "Introducing Elyxm 'Flow': Redefining the Event Experience",
         "discription": "Imagine your event transformed by precision mixology that brings every cocktail to life in real time. Whether you're organizing a concert, festival, conference, or high-profile gathering, enjoy an immersive celebration where each drink elevates your experience and creates unforgettable moments."
     },
     "features": {
         "title": "Elyxm at Work",
-        "subtitle": "Elyxm revolutionizes mixology for events at scale—whether you're energizing a festival or curating a tailored luxury celebration. With our blend of advanced technology and masterful craftsmanship, you serve consistently exceptional cocktails that captivate guests and streamline event operations.",
+        "subtitle": "No more settling for basic, ‘quick to pour’ drinks. With Elyxm, transform your event into an immersive cocktail experience—where masterfully crafted drinks are delivered right where your guests gather, elevating every moment into a celebration they won't forget.",
         "cardtitle1": "Concerts & Festivals",
         "carddiscription1": "Serve massive crowds quickly without sacrificing quality. Our tech-driven approach ensures consistently perfect pours, even at the largest venues.",
         "cardtitle2": "Weddings & Celebrations",
@@ -66,5 +66,14 @@
             "option4": "Corporate & Conferences"
         },
         "buttonText": "Schedule a Tasting"
+    },
+    "buttons": {
+        "contactButton": "Contact Us"
+    },
+    "sidebarContents": {
+        "meet": "Meet Our Customers",
+        "faq": "FAQ",
+        "invest": "Invest",
+        "legal": "Legal"
     }
 }
