@@ -107,7 +107,7 @@ const Footer = () => {
           </div> */}
         </div>
         <div className="md:w-[400px]">
-          <h5 className="text-[24px]">Sign up to get the latest</h5>
+          <h5 className="text-[24px]">{buttonText.contactUs}</h5>
           <FooterForm trans={translations} />
           {/* <form className="flex flex-col mt-4">
             <div>
@@ -177,10 +177,10 @@ const Footer = () => {
             <Link href="#">
               <FaXTwitter className="text-white text-2xl" />
             </Link>
-            <Link href="#">
+            <Link href="https://www.facebook.com/profile.php?id=61570435444029" target="_blank">
               <FaFacebookF className="text-white text-2xl" />
             </Link>
-            <Link href="#">
+            <Link href="https://www.instagram.com/elyxm.bar" target="_blank">
               <FaInstagram className="text-white text-2xl" />
             </Link>
             <Link href="#">

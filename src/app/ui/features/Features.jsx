@@ -37,11 +37,11 @@ const Features = () => {
 
   return (
     <section className="bg-[#ffffff] pt-8 md:pt-36 px-4 lg:px-28">
-      <div className="flex flex-col items-center md:grid grid-cols-1 md:grid-cols-2">
-        <h2 className="text-[32px] md:text-[56px] text-[#1e2022] leading-[60px] md:self-start">
+      <div className="flex flex-col md:flex-row items-center justify-between">
+        <h2 className="w-full md:w-1/2 text-[32px] md:text-[56px] text-[#1e2022] leading-[60px] md:self-start py-10">
           {t("title")}
         </h2>
-        <div className="flex items-end justify-end md:pl-20 lg:pl-40">
+        <div className="w-full md:w-1/2 flex items-end justify-end md:pl-20 lg:pl-40">
           <p className="text-lg text-[#1e2022] self-end">
             {t("subtitle")}
           </p>

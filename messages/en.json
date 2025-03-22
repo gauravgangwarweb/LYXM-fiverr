@@ -12,7 +12,8 @@
         "point4": "✔️ real-time data insights"
     },
     "elyxmFlow": {
-        "title": "Introducing Elyxm 'Flow': Redefining the Event Experience",
+        "title": "Introducing Elyxm _Flow_ :",
+        "subtitle": "Redefining the Event Experience",
         "discription": "Imagine your event transformed by precision mixology that brings every cocktail to life in real time. Whether you're organizing a concert, festival, conference, or high-profile gathering, enjoy an immersive celebration where each drink elevates your experience and creates unforgettable moments."
     },
     "features": {
@@ -75,5 +76,18 @@
         "faq": "FAQ",
         "invest": "Invest",
         "legal": "Legal"
+    },
+    "signupCta": {
+        "title": "Request the spec sheet",
+        "discription": "Download our latest specification sheet for Elyxm.",
+        "form": {
+            "options": {
+                "option1": "Concerts & Festivals",
+                "option2": "Weddings & Celebrations",
+                "option3": "Spirit Brands & Activations",
+                "option4": "Corporate & Conferences"
+            },
+            "buttonText": "Download"
+        }
     }
 }

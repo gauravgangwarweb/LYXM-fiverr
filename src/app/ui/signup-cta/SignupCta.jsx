@@ -12,7 +12,7 @@ const formSchema = z.object({
   roles: z.array(z.string()).min(1, "Please select at least one option"),
 });
 
-const SignupCta = () => {
+const SignupCta = ({text}) => {
   const [status, setStatus] = useState("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -71,10 +71,10 @@ const SignupCta = () => {
       <div className="mx-auto max-w-[1440px] grid grid-cols-1 md:grid-cols-2 md:gap-6">
         <div>
           <h2 className="text-2xl md:text-[44px]">
-            Request the spec sheet
+            {text.title}
           </h2>
           <p className="mt-2 text-lg text-[#a0a7ac]">
-            Download our latest specification sheet for Elyxm.
+            {text.disc}
           </p>
         </div>
         <div className="mt-4">
@@ -108,38 +108,38 @@ const SignupCta = () => {
                         <div className="flex items-center space-x-2">
                           <FormControl>
                             <Checkbox
-                              checked={form.watch("roles").includes("architect")}
+                              checked={form.watch("roles").includes("concerts_&_festivals")}
                               onCheckedChange={(checked) => {
                                 const roles = form.watch("roles");
                                 if (checked) {
-                                  form.setValue("roles", [...roles, "architect"]);
+                                  form.setValue("roles", [...roles, "concerts_&_festivals"]);
                                 } else {
-                                  form.setValue("roles", roles.filter(role => role !== "architect"));
+                                  form.setValue("roles", roles.filter(role => role !== "concerts_&_festivals"));
                                 }
                               }}
                             />
                           </FormControl>
                           <FormLabel className="text-sm font-medium leading-none">
-                            I'm an Architect
+                            {text.form.option1}
                           </FormLabel>
                         </div>
 
                         <div className="flex items-center space-x-2">
                           <FormControl>
                             <Checkbox
-                              checked={form.watch("roles").includes("designer")}
+                              checked={form.watch("roles").includes("weddings_&_celebrations")}
                               onCheckedChange={(checked) => {
                                 const roles = form.watch("roles");
                                 if (checked) {
-                                  form.setValue("roles", [...roles, "designer"]);
+                                  form.setValue("roles", [...roles, "weddings_&_celebrations"]);
                                 } else {
-                                  form.setValue("roles", roles.filter(role => role !== "designer"));
+                                  form.setValue("roles", roles.filter(role => role !== "weddings_&_celebrations"));
                                 }
                               }}
                             />
                           </FormControl>
                           <FormLabel className="text-sm font-medium leading-none">
-                            I'm a Designer
+                            {text.form.option2}
                           </FormLabel>
                         </div>
                       </div>
@@ -149,38 +149,38 @@ const SignupCta = () => {
                         <div className="flex items-center space-x-2">
                           <FormControl>
                             <Checkbox
-                              checked={form.watch("roles").includes("contractor")}
+                              checked={form.watch("roles").includes("spirit_brands_&_activations")}
                               onCheckedChange={(checked) => {
                                 const roles = form.watch("roles");
                                 if (checked) {
-                                  form.setValue("roles", [...roles, "contractor"]);
+                                  form.setValue("roles", [...roles, "spirit_brands_&_activations"]);
                                 } else {
-                                  form.setValue("roles", roles.filter(role => role !== "contractor"));
+                                  form.setValue("roles", roles.filter(role => role !== "spirit_brands_&_activations"));
                                 }
                               }}
                             />
                           </FormControl>
                           <FormLabel className="text-sm font-medium leading-none">
-                            I'm a Contractor
+                            {text.form.option3}
                           </FormLabel>
                         </div>
 
                         <div className="flex items-center space-x-2">
                           <FormControl>
                             <Checkbox
-                              checked={form.watch("roles").includes("other")}
+                              checked={form.watch("roles").includes("corporate_&_conferences")}
                               onCheckedChange={(checked) => {
                                 const roles = form.watch("roles");
                                 if (checked) {
-                                  form.setValue("roles", [...roles, "other"]);
+                                  form.setValue("roles", [...roles, "corporate_&_conferences"]);
                                 } else {
-                                  form.setValue("roles", roles.filter(role => role !== "other"));
+                                  form.setValue("roles", roles.filter(role => role !== "corporate_&_conferences"));
                                 }
                               }}
                             />
                           </FormControl>
                           <FormLabel className="text-sm font-medium leading-none">
-                            Other
+                            {text.form.option4}
                           </FormLabel>
                         </div>
                       </div>
@@ -203,7 +203,7 @@ const SignupCta = () => {
                     : "bg-[#f5f5f7] text-[#0a0a0b] hover:bg-[#e5e5e7]"
                   }`}
               >
-                {status === "loading" ? "Sending..." : "Download"}
+                {status === "loading" ? "Sending..." : `${text.form.buttonText}`}
               </button>
             </form>
           </Form>

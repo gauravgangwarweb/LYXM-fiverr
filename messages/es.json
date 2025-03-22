@@ -12,7 +12,8 @@
         "point4": "✔️ Información en tiempo real basada en datos"
     },
     "elyxmFlow": {
-        "title": "Presentamos Elyxm Flow: Redefiniendo la experiencia de eventos",
+        "title": "Presentamos Elyxm _Flow_ :",
+        "subtitle": "Redefiniendo la experiencia de eventos",
         "discription": "Imagina tu evento transformado por una mixología de precisión que da vida a cada cóctel en tiempo real. Ya sea que organices un concierto, festival, conferencia o un evento exclusivo, disfruta de una celebración inmersiva donde cada bebida eleva tu experiencia y crea momentos inolvidables."
     },
     "features": {
@@ -75,5 +76,18 @@
         "faq": "Preguntas Frecuentes (FAQ)",
         "invest": "Invierte",
         "legal": "Legal"
+    },
+    "signupCta": {
+        "title": "Request the spec sheet",
+        "discription": "Download our latest specification sheet for Elyxm.",
+        "form": {
+            "options": {
+                "option1": "Conciertos y Festivales",
+                "option2": "Bodas y Celebraciones",
+                "option3": "Marcas de Bebidas y Activaciones",
+                "option4": "Corporativo y Conferencias"
+            },
+            "buttonText": "Download"
+        }
     }
 }
