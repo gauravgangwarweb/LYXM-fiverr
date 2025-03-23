@@ -177,14 +177,14 @@ const Footer = () => {
             {/* <Link href="#">
               <FaXTwitter className="text-white text-2xl" />
             </Link> */}
-            <Link href="https://www.facebook.com/profile.php?id=61570435444029" target="_blank">
-              <FaFacebookF className="text-white text-2xl" />
-            </Link>
             <Link href="https://www.instagram.com/elyxm.bar" target="_blank">
               <FaInstagram className="text-white text-2xl" />
             </Link>
             <Link href="#">
               <FiYoutube className="text-white text-2xl" />
+            </Link>
+            <Link href="https://www.facebook.com/profile.php?id=61570435444029" target="_blank">
+              <FaFacebookF className="text-white text-2xl" />
             </Link>
           </div>
           <Link className="mt-4" href="#">
