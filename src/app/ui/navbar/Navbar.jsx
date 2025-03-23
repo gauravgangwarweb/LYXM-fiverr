@@ -107,9 +107,9 @@ const Navbar = ({buttonText, sidebar}) => {
                 </button>
                 
                 <div className="my-4 flex items-center gap-3">
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  {/* <a href="#" target="_blank" rel="noopener noreferrer">
                     <FaXTwitter className="text-white text-2xl" />
-                  </a>
+                  </a> */}
                   <a href="https://www.facebook.com/profile.php?id=61570435444029" target="_blank" rel="noopener noreferrer">
                     <FaFacebook className="text-white text-2xl" />
                   </a>

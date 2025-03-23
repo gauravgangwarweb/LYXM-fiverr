@@ -174,9 +174,9 @@ const Footer = () => {
         </Link>
         <div className="flex flex-col items-start md:items-end mt-10 md:mt-0">
           <div className="flex gap-4">
-            <Link href="#">
+            {/* <Link href="#">
               <FaXTwitter className="text-white text-2xl" />
-            </Link>
+            </Link> */}
             <Link href="https://www.facebook.com/profile.php?id=61570435444029" target="_blank">
               <FaFacebookF className="text-white text-2xl" />
             </Link>
