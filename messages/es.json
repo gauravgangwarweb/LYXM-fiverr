@@ -33,6 +33,7 @@
         "subtitle": "Controla tu servicio de cócteles desde cualquier dispositivo.",
         "cardtitle1": "Métricas en Tiempo Real",
         "carddiscription1": "Rastrea cada vertido, monitorea el inventario y supervisa el rendimiento con datos actualizados al instante.",
+        "note": "Pregúntanos cómo Elyxm puede conectarse con tus sistemas actuales —ya sea tu sistema de punto de venta (POS), tu aplicación móvil o tu sitio web— para que puedas gestionar eventos sin perder ni un detalle.",
         "cardtitle2": "Coordinación sin Esfuerzo",
         "carddiscription2": "Se sincroniza perfectamente con nuestros sistemas en el lugar para mantener un servicio constante y eficiente."
     },
@@ -48,6 +49,7 @@
         "solution4": "Our streamlined system operates quickly and efficiently, enabling El Cielo to expand its menu from basic oNuestro sistema optimizado opera de manera rápida y eficiente, permitiendo a Cielo ampliar su menú desde opciones básicas hasta una oferta completa de cócteles, sin incrementar la complejidad ni los tiempos de espera"
     },
     "newsRoom": {
+        "heading": "Sala de prensa",
         "title1": "Elyxm: La primera barra inteligente diseñada y fabricada en República Dominicana",
         "author1": "RC Noticias",
         "title2": "Elyxm: La barra inteligente pionera de la República Dominicana, diseñada y fabricada localmente",
@@ -78,8 +80,8 @@
         "legal": "Legal"
     },
     "signupCta": {
-        "title": "Request the spec sheet",
-        "discription": "Download our latest specification sheet for Elyxm.",
+        "title": "Solicita la ficha técnica",
+        "discription": "Descarga la versión más reciente de nuestras especificaciones para Elyxm.",
         "form": {
             "options": {
                 "option1": "Conciertos y Festivales",
@@ -87,7 +89,7 @@
                 "option3": "Marcas de Bebidas y Activaciones",
                 "option4": "Corporativo y Conferencias"
             },
-            "buttonText": "Download"
+            "buttonText": "Descargar"
         }
     }
 }

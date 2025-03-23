@@ -38,7 +38,7 @@ const Newsroom = () => {
     <section className="bg-[#171918] px-4 md:px-8 py-20">
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8">
         <h2 className="text-[#f5f5f7] text-[32px] md:text-[56px] leading-none">
-          Newsroom
+          {t("heading")}
         </h2>
         {/* <Link className="group flex gap-2" href="#">
           <span className="text-base font-medium underline underline-offset-8">

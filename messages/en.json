@@ -33,6 +33,7 @@
         "subtitle": "Monitor your cocktail service from any device.",
         "cardtitle1": "Live Metrics",
         "carddiscription1": "Track pours, monitor inventory, and oversee performance with up-to-the-second data.",
+        "note": "*Ask us how Elyxm can connect with your current systems—be it your POS, mobile app, or website—so you can manage events without missing a beat.",
         "cardtitle2": "Effortless Coordination",
         "carddiscription2": "Seamlessly syncs with our on-site systems to keep service consistent and efficient."
     },
@@ -48,6 +49,7 @@
         "solution4": "Our streamlined system operates quickly and efficiently, enabling El Cielo to expand its menu from basic offerings to a full cocktail range—without increasing complexity or wait times."
     },
     "newsRoom": {
+        "heading": "Newsroom",
         "title1": "The first smart bar designed and manufactured in the Dominican Republic",
         "author1": "RC Noticias",
         "title2": "Elyxm: The Dominican Republic's Trailblazing Smart Bar, Locally Designed and Manufactured",

@@ -41,7 +41,7 @@ const Features = () => {
         <h2 className="w-full md:w-1/2 text-[32px] md:text-[56px] text-[#1e2022] leading-[60px] md:self-start py-10">
           {t("title")}
         </h2>
-        <div className="w-full md:w-1/2 flex items-end justify-end md:pl-20 lg:pl-40">
+        <div className="w-full md:w-[70%] flex items-end justify-end md:pl-20 lg:pl-40">
           <p className="text-lg text-[#1e2022] self-end">
             {t("subtitle")}
           </p>
