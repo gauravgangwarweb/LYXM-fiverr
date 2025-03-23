@@ -113,7 +113,7 @@ const Navbar = ({buttonText, sidebar}) => {
                   <a href="https://www.facebook.com/profile.php?id=61570435444029" target="_blank" rel="noopener noreferrer">
                     <FaFacebook className="text-white text-2xl" />
                   </a>
-                  <a href="https://www.instagram.com/elyxmbar/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/elyxm.bar" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="text-white text-2xl" />
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
