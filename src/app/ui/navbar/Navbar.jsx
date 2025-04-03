@@ -99,7 +99,7 @@ const Navbar = ({buttonText, sidebar}) => {
             <ContactUsButton text={buttonText} />
               <div className="mt-8 flex flex-col gap-3 text-[#f5f5f7] font-bold text-xl">
                 <button className="text-left hover:opacity-80">{sidebar.link1}</button>
-                <button className="text-left hover:opacity-80">{sidebar.link2}</button>
+                <Link href={localActive === "en" ? "/en/faq" : "/es/faq"} className="text-left hover:opacity-80">{sidebar.link2}</Link>
                 <Link href={localActive === "en" ? "/en/invest" : "/es/invest"} className="text-left hover:opacity-80">
                   {sidebar.link3}
                 </Link>
