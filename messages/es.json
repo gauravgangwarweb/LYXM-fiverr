@@ -175,5 +175,63 @@
         "buttonText": "Submit",
         "paragraph_1": "Para los efectos de esta oferta de inversión, la inversión mínima es de $10,000. Anteriormente, hemos ofrecido oportunidades para invertir cantidades menores como parte de ofertas de financiamiento colectivo según la Regulación. Si no cumple con la definición de inversor individual acreditado o no desea invertir $10,000 o más en este momento, es posible que en el futuro le brindemos otras oportunidades.",
         "paragraph_2": "Su reserva no es vinculante y estará sujeta a su decisión final solo si la Compañía procede con una oferta y después de que haya tenido la oportunidad de revisar los términos precisos de la misma y cumplir con los requisitos legales. No se está solicitando dinero ni ninguna otra forma de compensación. No se aceptará ningún envío de dinero. No se aceptará ninguna oferta para la compra de valores. No existen obligaciones o compromisos asociados con cualquier manifestación de interés; cualquier expresión de su interés no es vinculante. Cualquier inversión estará sujeta a un acuerdo firmado y a la verificación de su condición de inversor acreditado."
+    },
+    "faq": {
+        "title": "FAQs",
+        "faq_1": {
+            "question": "How large is Vestaboard?",
+            "answer": {
+                "paragraph_1": "Vestaboard is approximately the size of a 42-inch LCD TV.",
+                "paragraph_2": {
+                    "width": "Width: 41.2-in wide (1046 mm)",
+                    "height": "Height: 22.0-in tall (561 mm)",
+                    "depth": "Depth: 3.5-in deep (89 mm)"
+                },
+                "paragraph_3": "Request our specifications sheet here."
+            }
+        },
+        "faq_2": {
+            "question": "How is Vestaboard powered?",
+            "answer": {
+                "paragraph_1": "Vestaboard is powered by a single standard 3-prong plug. It does not need to be on a separate circuit breaker.",
+                "paragraph_2": "When changing messages, it will pull similar power to an LCD television but when idle, will use 90+% less power. Power consumption is very low when Vestaboard is not changing messages.",
+                "paragraph_3": "Vestaboard supports 100-240V for US and International power consumption and requires 121-watts when updating messages."
+            }
+        },
+        "faq_3": {
+            "question": "How does Vestaboard display messages?",
+            "answer": {
+                "paragraph_1": "Vestaboard requires a WiFi network connected to the Internet in order to display messages.",
+                "paragraph_2": "First-time setup is performed using the Vestaboard app for iPhone and Android. Setup consists of a few simple steps where you will create and/or link a Vestaboard account to your Vestaboard and connect it to your WiFi network.",
+                "paragraph_3": "Once your Vestaboard is connected, you will not need to re-connect it to WiFi unless you make changes to your router or Internet connection."
+            }
+        },
+        "faq_4": {
+            "question": "How many Vestaboards can I control at once?",
+            "answer": {
+                "paragraph_1": "You may connect multiple Vestaboards to one WiFi network. The Vestaboard app allows you to connect and control an unlimited amount of Vestaboards, whether they are on one network or multiple networks."
+            }
+        },
+        "faq_5": {
+            "question": "How do I pick messages to send to my Vestaboard?",
+            "answer": {
+                "paragraph_1": "Vestaboard displays messages automatically through channels you subscribe to or create for yourself. You can also send individual messages on-the-go. Vestaboard receives the message information via WiFi, and flips the characters to the proper letters or numbers to show exactly what you want to see.",
+                "paragraph_2": "After performing initial setup from the Vestaboard app, you will be able to control and display messages on your Vestaboard from anywhere in the world through the app, or from any web browser, such as Chrome."
+            }
+        },
+        "faq_6": {
+            "question": "How long of a message can I display on Vestaboard?",
+            "answer": {
+                "paragraph_1": "Vestaboard has room to display 132 characters, including letters, numbers, symbols, and colors. It's perfect for displaying news and weather updates, quotes, and whatever messages you want to share.",
+                "paragraph_2": "To display the message on the board, Vestaboard will process the text entry and smartly arrange it to look seamless on the board or allow you to control it so that what-you-see-is-what-you-get (WYSIWYG)."
+            }
+        },
+        "faq_7": {
+            "question": "More questions?",
+            "answer": {
+                "paragraph_1": "Check out our Help Center for more information such as delivery timing, installation information, warranty, and more: www.vestaboard.com/help",
+                "paragraph_2": "Contact us anytime via the chat module or via our Contact Us form (support@vestaboard.com)."
+            }
+        }
     }
 }
