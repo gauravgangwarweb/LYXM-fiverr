@@ -91,5 +91,89 @@
             },
             "buttonText": "Descargar"
         }
+    },
+    "invest": {
+        "heading": "Invest in Elyxm",
+        "paragraph_1": "Elyxm está revolucionando la experiencia del cóctel al fusionar sin problemas el arte de la mixología con la tecnología de precisión más avanzada. Nuestro innovador sistema ofrece cócteles con una precisión de 1/16 de onza y tiempos de vertido de solo 5 segundos, partiendo de una biblioteca cuidadosamente seleccionada de más de 250 recetas creadas por mixólogos de todo el mundo.",
+        "paragraph_2": "Diseñado para transformar eventos—desde festivales y conciertos multitudinarios hasta bodas de lujo y reuniones corporativas—Elyxm garantiza que cada bebida se elabore de manera consistente y perfecta. Nuestra plataforma no solo mejora la experiencia de los invitados, sino que también optimiza la operación, reduciendo costos de personal y minimizando el desperdicio gracias a datos en tiempo real y a la inteligencia de nuestras soluciones de aprendizaje automático.",
+        "heading_list_1": "Tenemos un plan de crecimiento de tres partes para construir una empresa extraordinaria:",
+        "list_1_items": {
+            "item_1": {
+                "title": "Escalar Nuestro Sistema de Barra Inteligente Insignia:",
+                "discription": "Ampliaremos nuestra presencia en el mercado en el sector de mixología de rápido crecimiento, aprovechando la tecnología avanzada, los conocimientos basados en datos y nuestro exclusivo “Modo Mixología”, que empodera a bartenders y entusiastas para crear cócteles verdaderamente personalizados (​​)."
+            },
+            "item_2": {
+                "title": "Acelerar los Ingresos Recurrentes con  Elyxm+:",
+                "discription": " Fortaleceremos nuestra oferta a través de una plataforma de software por suscripción que brindará contenido curado, beneficios de fidelidad y conocimientos de mixología en tiempo real, generando ingresos recurrentes consistentes y escalables (​​)."
+            },
+            "item_3": {
+                "title": "Ampliar Nuestro Alcance de Mercado:",
+                "discription": " Presentaremos variaciones de producto más accesibles para ampliar nuestra base de clientes en diversos entornos de eventos, asegurando que nuestro enfoque innovador llegue a nuevas audiencias y consolide nuestras fuentes de ingresos recurrentes."
+            }
+        },
+        "paragraph_3": "Desde nuestro lanzamiento en 2024, hemos celebrado hitos importantes—desde eventos de alto perfil en Santo Domingo y asociaciones clave con sedes de primer nivel hasta logros tempranos que subrayan nuestro compromiso inquebrantable con la precisión, la innovación y el arte de la mixología. Con un equipo experimentado de mixólogos, tecnólogos y veteranos de la industria, Elyxm está en una posición única para establecer un nuevo estándar en el mercado global de eventos, al ofrecer experiencias de cócteles inigualables que cautivan e inspiran.",
+        "note": "Actualmente, estamos explorando oportunidades de inversión ángel a través de un acuerdo SAFE (Simple Agreement for Future Equity), en colaboración con Y Combinator. Esta propuesta, amigable para los fundadores, está diseñada para asegurar el capital necesario para un escalamiento rápido, al tiempo que mantiene el control estratégico. Por favor, tenga en cuenta que en este momento no se solicitan fondos ni ninguna otra forma de compensación, y no se aceptarán ofertas de compra de valores. Esta comunicación tiene fines exclusivamente informativos y no crea ninguna obligación o compromiso.",
+        "paragraph_4": "Lo invitamos a conocer más sobre nuestra visión y a unirse a este emocionante viaje mientras redefinimos la experiencia del cóctel, un cóctel de precisión a la vez.",
+        "button": "SOLICITE NUESTRO PITCH DECK",
+        "heading_list_2": "Documentos Relevantes para Inversionistas Potenciales:",
+        "list_2_items": {
+            "item_1": {
+                "title": "SAFE Document"
+            }
+        },
+        "heading_list_3": "Descripcion General de Negocios y Finanzas",
+        "list_3_items": {
+            "item_1": {
+                "title": "Pitch Deck"
+            }
+        },
+        "heading_list_4": "Antecedentes de la Empresa y Gobernanza",
+        "list_4_items": {
+            "item_1": {
+                "title": "Fundadores y Miembros Clave del Equipo:",
+                "discription": " Sus roles, experiencia y trayectorias relevantes."
+            },
+            "item_2": {
+                "title": "Estructura Corporativa y Estatus Legal:",
+                "discription": " Información sobre cómo está organizada Elyxm (por ejemplo, Delaware C-Corp), así como de posibles subsidiarias o entidades afiliadas destacables."
+            }
+        },
+        "request_text": "SOLICITE NUESTRO PITCH DECK"
+    },
+    "investInquiry": {
+        "title": "Consulta para inversores",
+        "discription": "Si está interesado en esta oportunidad de inversión y/o en obtener una primera vista del segundo producto, por favor envíe su información a continuación. Cualquier reserva no es vinculante y no estará obligado a realizar una inversión. ",
+        "formFields": {
+            "field1": "First Name*",
+            "field2": "Last Name*",
+            "field3": "Email*",
+            "field4": {
+                "title": "Tipo de inversor*",
+                "options": {
+                    "option1": "Individuo acreditado – lea la definición a continuación",
+                    "option2": "Individuo no acreditado – lea la definición a continuación",
+                    "option3": "Fondo de riesgo o institucional",
+                    "option4": "Fondo corporativo",
+                    "option5": "Family office"
+                },
+                "note": {
+                    "title": "La SEC define a un inversor acreditado de la siguiente manera:",
+                    "discription_1": "- Patrimonio neto superior a $1 millón, sin incluir la residencia principal (individualmente o junto con un socio)",
+                    "discription_2": "- Ingresos superiores a $200,000 (individualmente) o $300,000 (con un socio)"
+                }
+            },
+            "field5": {
+                "title": "Rango de inversión que consideraría:*",
+                "options": {
+                    "option1": "$10,000 o menos",
+                    "option2": "$10,000 - $50,000 (en incrementos de $10,000)",
+                    "option3": "$50,000 - $100,000",
+                    "option4": "$100,000 o más"
+                }
+            }
+        },
+        "buttonText": "Submit",
+        "paragraph_1": "Para los efectos de esta oferta de inversión, la inversión mínima es de $10,000. Anteriormente, hemos ofrecido oportunidades para invertir cantidades menores como parte de ofertas de financiamiento colectivo según la Regulación. Si no cumple con la definición de inversor individual acreditado o no desea invertir $10,000 o más en este momento, es posible que en el futuro le brindemos otras oportunidades.",
+        "paragraph_2": "Su reserva no es vinculante y estará sujeta a su decisión final solo si la Compañía procede con una oferta y después de que haya tenido la oportunidad de revisar los términos precisos de la misma y cumplir con los requisitos legales. No se está solicitando dinero ni ninguna otra forma de compensación. No se aceptará ningún envío de dinero. No se aceptará ninguna oferta para la compra de valores. No existen obligaciones o compromisos asociados con cualquier manifestación de interés; cualquier expresión de su interés no es vinculante. Cualquier inversión estará sujeta a un acuerdo firmado y a la verificación de su condición de inversor acreditado."
     }
 }

@@ -20,7 +20,7 @@ import {
 import ContactUsButton from "@/components/ui/contactusButton";
 import Link from "next/link";
 
-const Navbar = ({buttonText, sidebar}) => {
+const GrayNavbar = ({buttonText, sidebar}) => {
   const [showLangDropdown, setShowLangDropdown] = useState(false);
   const [isPending, startTransition] = useTransition();
   const [selectedLang, setSelectedLang] = useState("en");
@@ -74,7 +74,7 @@ const Navbar = ({buttonText, sidebar}) => {
   );
 
   return (
-    <header className="bg-black/80 fixed top-0 z-40 w-full border-b border-transparent transition-colors duration-200 px-4 md:px-8 py-4">
+    <header className="bg-inherit top-0 z-40 w-full border-b border-transparent transition-colors duration-200 px-4 md:px-8 py-4">
       <div className="flex justify-between items-center">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           {
@@ -126,7 +126,7 @@ const Navbar = ({buttonText, sidebar}) => {
           </SheetContent>
         </Sheet>
 
-        <img className="w-28 md:w-32" src="/logo.svg" alt="logo" />
+        <img className="w-28 md:w-32 ml-20" src="/logo.svg" alt="logo" />
         
         <div className="flex gap-0 md:gap-4 items-center">
           <LanguageDropdown />
@@ -137,4 +137,4 @@ const Navbar = ({buttonText, sidebar}) => {
   );
 };
 
-export default Navbar;
+export default GrayNavbar;
