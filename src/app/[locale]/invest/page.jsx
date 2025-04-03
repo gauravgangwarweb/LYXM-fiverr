@@ -13,7 +13,7 @@ const Invest = () => {
         <p className="text-[#f5f5f7] text-[26px] md:text-[56px]">
           {t("heading")}
         </p>
-        <div className="h-[250px] md:h-[600px] w-full top-0 right-0 border-transparent relative aspect-video">
+        <div className="h-[250px] md:h-[600px] w-full top-0 right-0 border-transparent relative aspect-video mt-4">
           <video
             //   autoPlay
             //   playsInline
@@ -23,7 +23,7 @@ const Invest = () => {
             webkit-playsinline="true"
             x5-playsinline="true"
             preload="metadata"
-            className="w-full h-full object-cover absolute top-12"
+            className="w-full h-full object-cover absolute top-0"
           >
             <source
               src="https://drive.google.com/file/d/1cgJLEwjcU3AtAbO75AVzSAphrNUwWr9Q/view?usp=drive_link"
@@ -90,7 +90,7 @@ const Invest = () => {
                 <span className="font-bold">
                   {t("list_4_items.item_1.title")}
                 </span>
-                <span>{t("list_4_items.item_1.discription")}</span>
+                <span>{t("list_4_items.item_1.description")}</span>
               </Link>
             </li>
             <li className="">

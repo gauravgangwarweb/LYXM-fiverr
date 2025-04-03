@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 import {
   FaFacebook,
@@ -27,11 +27,17 @@ const GrayNavbar = ({buttonText, sidebar}) => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const localActive = useLocale();
-  // console.log(localActive);
+  const pathname = usePathname();
   const languages = [
     { code: "en", flag: "/eng-flag.png", label: "English" },
     { code: "es", flag: "/spain.png", label: "Spanish" },
   ];
+
+  const getNewPath = (newLocale) => {
+    const segments = pathname.split('/');
+    segments[1] = newLocale; // Replace the locale segment
+    return segments.join('/');
+  };
 
   const LanguageDropdown = () => (
     <div className="relative">
@@ -55,7 +61,7 @@ const GrayNavbar = ({buttonText, sidebar}) => {
                 setSelectedLang(lang.code);
                 setShowLangDropdown(false);
                 startTransition(() => {
-                  router.replace(`/${lang.code}`);
+                  router.replace(getNewPath(lang.code));
                 });
               }}
               className="flex items-center gap-2 p-2 w-full hover:bg-gray-700/20"
@@ -65,7 +71,6 @@ const GrayNavbar = ({buttonText, sidebar}) => {
                 alt={`${lang.label} flag`}
                 className="w-6 h-6 object-cover rounded-full"
               />
-              {/* <span className="text-white text-sm">{lang.label}</span> */}
             </button>
           ))}
         </div>
@@ -125,8 +130,9 @@ const GrayNavbar = ({buttonText, sidebar}) => {
             </div>
           </SheetContent>
         </Sheet>
-
-        <img className="w-28 md:w-32 ml-20" src="/logo.svg" alt="logo" />
+        <Link href="/">
+        <img className="w-28 md:w-32 md:ml-20" src="/logo.svg" alt="logo" />
+        </Link>
         
         <div className="flex gap-0 md:gap-4 items-center">
           <LanguageDropdown />

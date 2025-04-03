@@ -100,15 +100,15 @@
         "list_1_items": {
             "item_1": {
                 "title": "Escalar Nuestro Sistema de Barra Inteligente Insignia:",
-                "discription": "Ampliaremos nuestra presencia en el mercado en el sector de mixología de rápido crecimiento, aprovechando la tecnología avanzada, los conocimientos basados en datos y nuestro exclusivo “Modo Mixología”, que empodera a bartenders y entusiastas para crear cócteles verdaderamente personalizados (​​)."
+                "description": "Ampliaremos nuestra presencia en el mercado en el sector de mixología de rápido crecimiento, aprovechando la tecnología avanzada, los conocimientos basados en datos y nuestro exclusivo “Modo Mixología”, que empodera a bartenders y entusiastas para crear cócteles verdaderamente personalizados (​​)."
             },
             "item_2": {
                 "title": "Acelerar los Ingresos Recurrentes con  Elyxm+:",
-                "discription": " Fortaleceremos nuestra oferta a través de una plataforma de software por suscripción que brindará contenido curado, beneficios de fidelidad y conocimientos de mixología en tiempo real, generando ingresos recurrentes consistentes y escalables (​​)."
+                "description": " Fortaleceremos nuestra oferta a través de una plataforma de software por suscripción que brindará contenido curado, beneficios de fidelidad y conocimientos de mixología en tiempo real, generando ingresos recurrentes consistentes y escalables (​​)."
             },
             "item_3": {
                 "title": "Ampliar Nuestro Alcance de Mercado:",
-                "discription": " Presentaremos variaciones de producto más accesibles para ampliar nuestra base de clientes en diversos entornos de eventos, asegurando que nuestro enfoque innovador llegue a nuevas audiencias y consolide nuestras fuentes de ingresos recurrentes."
+                "description": " Presentaremos variaciones de producto más accesibles para ampliar nuestra base de clientes en diversos entornos de eventos, asegurando que nuestro enfoque innovador llegue a nuevas audiencias y consolide nuestras fuentes de ingresos recurrentes."
             }
         },
         "paragraph_3": "Desde nuestro lanzamiento en 2024, hemos celebrado hitos importantes—desde eventos de alto perfil en Santo Domingo y asociaciones clave con sedes de primer nivel hasta logros tempranos que subrayan nuestro compromiso inquebrantable con la precisión, la innovación y el arte de la mixología. Con un equipo experimentado de mixólogos, tecnólogos y veteranos de la industria, Elyxm está en una posición única para establecer un nuevo estándar en el mercado global de eventos, al ofrecer experiencias de cócteles inigualables que cautivan e inspiran.",
@@ -131,11 +131,11 @@
         "list_4_items": {
             "item_1": {
                 "title": "Fundadores y Miembros Clave del Equipo:",
-                "discription": " Sus roles, experiencia y trayectorias relevantes."
+                "description": " Sus roles, experiencia y trayectorias relevantes."
             },
             "item_2": {
                 "title": "Estructura Corporativa y Estatus Legal:",
-                "discription": " Información sobre cómo está organizada Elyxm (por ejemplo, Delaware C-Corp), así como de posibles subsidiarias o entidades afiliadas destacables."
+                "description": " Información sobre cómo está organizada Elyxm (por ejemplo, Delaware C-Corp), así como de posibles subsidiarias o entidades afiliadas destacables."
             }
         },
         "request_text": "SOLICITE NUESTRO PITCH DECK"
