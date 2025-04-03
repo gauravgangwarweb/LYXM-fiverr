@@ -142,7 +142,7 @@
     },
     "investInquiry": {
         "title": "Consulta para inversores",
-        "discription": "Si está interesado en esta oportunidad de inversión y/o en obtener una primera vista del segundo producto, por favor envíe su información a continuación. Cualquier reserva no es vinculante y no estará obligado a realizar una inversión. ",
+        "description": "Si está interesado en esta oportunidad de inversión y/o en obtener una primera vista del segundo producto, por favor envíe su información a continuación. Cualquier reserva no es vinculante y no estará obligado a realizar una inversión. ",
         "formFields": {
             "field1": "First Name*",
             "field2": "Last Name*",
@@ -158,8 +158,8 @@
                 },
                 "note": {
                     "title": "La SEC define a un inversor acreditado de la siguiente manera:",
-                    "discription_1": "- Patrimonio neto superior a $1 millón, sin incluir la residencia principal (individualmente o junto con un socio)",
-                    "discription_2": "- Ingresos superiores a $200,000 (individualmente) o $300,000 (con un socio)"
+                    "description_1": "- Patrimonio neto superior a $1 millón, sin incluir la residencia principal (individualmente o junto con un socio)",
+                    "description_2": "- Ingresos superiores a $200,000 (individualmente) o $300,000 (con un socio)"
                 }
             },
             "field5": {
