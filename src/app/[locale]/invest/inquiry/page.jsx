@@ -37,7 +37,7 @@ const Inquiry = () => {
   return (
     <>
       <GrayNavbarProvider />
-      <section className="bg-[#171818] w-full py-16 md:py-10 px-6 md:px-16">
+      <section className="bg-[#171818] w-full py-16 md:py-10 px-4 md:px-16">
         <p className="text-[#f5f5f7] text-[26px] md:text-[56px]">
           {t("title")}
           {/* Invester Inquiry */}

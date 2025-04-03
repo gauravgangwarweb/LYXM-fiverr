@@ -9,7 +9,7 @@ const Invest = () => {
   return (
     <>
       <GrayNavbarProvider />
-      <section className="bg-[#171818] w-full py-16 pb-0 md:pb-36 px-6 md:px-16">
+      <section className="bg-[#171818] w-full py-16 pb-20 md:pb-36 px-4 md:px-16">
         <p className="text-[#f5f5f7] text-[26px] md:text-[56px]">
           {t("heading")}
         </p>
