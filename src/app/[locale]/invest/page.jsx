@@ -57,7 +57,7 @@ const Invest = () => {
         <div className="flex flex-col items-center justify-center mt-6">
           <Link
             href="invest/inquiry"
-            className="self-center inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border py-2.5 group border-foreground bg-transparent hover:bg-foreground hover:border-foreground/40 font-normal text-foreground hover:text-primaryDark sm:text-lg text-base px-10 sm:py-5 h-9 transition-colors duration-800 ease-in-out"
+            className="self-center inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border py-2.5 group border-foreground bg-white text-black hover:border-foreground/40 font-bold hover:text-primaryDark sm:text-lg text-base px-10 sm:py-5 h-9 transition-colors duration-800 ease-in-out"
             target="_blank"
           >
             <span className="flex gap-1">{t("button")}</span>
@@ -99,7 +99,7 @@ const Invest = () => {
               <span>{t("list_4_items.item_2.description")}</span>
             </li>
           </ul>
-          <p className="text-lg mt-6">{t("request_text")}</p>
+          {/* <p className="text-lg mt-6">{t("request_text")}</p> */}
         </div>
       </section>
       <Footer />
