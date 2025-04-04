@@ -13,24 +13,16 @@ const Invest = () => {
         <p className="text-[#f5f5f7] text-[26px] md:text-[56px]">
           {t("heading")}
         </p>
-        <div className="h-[250px] md:h-[600px] w-full top-0 right-0 border-transparent relative aspect-video mt-4">
-          <video
-            //   autoPlay
-            //   playsInline
-            controls
-            //   muted
-            loop
-            webkit-playsinline="true"
-            x5-playsinline="true"
-            preload="metadata"
-            className="w-full h-full object-cover absolute top-0"
-          >
-            <source
-              src="https://drive.google.com/file/d/1cgJLEwjcU3AtAbO75AVzSAphrNUwWr9Q/view?usp=drive_link"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+        <div className="w-full aspect-video relative mt-4">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/x32FcQsUUH8?si=79S_8vGze4-Tg-6L"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
         {/* text-area */}
         <div className="mt-20 text-lg text-[#f5f5f7]">
@@ -63,7 +55,11 @@ const Invest = () => {
         </div>
         {/* inquire button */}
         <div className="flex flex-col items-center justify-center mt-6">
-          <Link href="invest/inquiry" className="self-center inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border py-2.5 group border-foreground bg-transparent hover:bg-foreground hover:border-foreground/40 font-normal text-foreground hover:text-primaryDark sm:text-lg text-base px-10 sm:py-5 h-9 transition-colors duration-800 ease-in-out" target="_blank">
+          <Link
+            href="invest/inquiry"
+            className="self-center inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border py-2.5 group border-foreground bg-transparent hover:bg-foreground hover:border-foreground/40 font-normal text-foreground hover:text-primaryDark sm:text-lg text-base px-10 sm:py-5 h-9 transition-colors duration-800 ease-in-out"
+            target="_blank"
+          >
             <span className="flex gap-1">{t("button")}</span>
           </Link>
         </div>
@@ -86,7 +82,10 @@ const Invest = () => {
           <p className="font-bold mt-6">{t("heading_list_4")}</p>
           <ul className="text-lg list-disc pl-8 mt-4">
             <li className="">
-              <Link href="https://docs.google.com/document/d/1zB-ICQ9ceUY0hkiwDfrSJB46q4BWgnOvuZ5wIiaTH0o/edit?usp=drive_link" target="_blank">
+              <Link
+                href="https://docs.google.com/document/d/1zB-ICQ9ceUY0hkiwDfrSJB46q4BWgnOvuZ5wIiaTH0o/edit?usp=drive_link"
+                target="_blank"
+              >
                 <span className="font-bold">
                   {t("list_4_items.item_1.title")}
                 </span>
