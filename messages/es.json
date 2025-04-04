@@ -177,60 +177,59 @@
         "paragraph_2": "Su reserva no es vinculante y estará sujeta a su decisión final solo si la Compañía procede con una oferta y después de que haya tenido la oportunidad de revisar los términos precisos de la misma y cumplir con los requisitos legales. No se está solicitando dinero ni ninguna otra forma de compensación. No se aceptará ningún envío de dinero. No se aceptará ninguna oferta para la compra de valores. No existen obligaciones o compromisos asociados con cualquier manifestación de interés; cualquier expresión de su interés no es vinculante. Cualquier inversión estará sujeta a un acuerdo firmado y a la verificación de su condición de inversor acreditado."
     },
     "faq": {
-        "title": "FAQs",
+        "title": "Preguntas Frecuentes (FAQ)",
         "faq_1": {
-            "question": "How large is Vestaboard?",
+            "question": "¿Qué tan precisa es la dispensación de los cócteles?",
             "answer": {
-                "paragraph_1": "Vestaboard is approximately the size of a 42-inch LCD TV.",
-                "paragraph_2": {
-                    "width": "Width: 41.2-in wide (1046 mm)",
-                    "height": "Height: 22.0-in tall (561 mm)",
-                    "depth": "Depth: 3.5-in deep (89 mm)"
-                },
-                "paragraph_3": "Request our specifications sheet here."
+                "paragraph_1": "Elyxm vierte los cócteles con una precisión de 1/16 de onza, garantizando así la misma calidad en cada bebida."
             }
         },
         "faq_2": {
-            "question": "How is Vestaboard powered?",
+            "question": "¿Qué tan rápido puede servirse cada cóctel?",
             "answer": {
-                "paragraph_1": "Vestaboard is powered by a single standard 3-prong plug. It does not need to be on a separate circuit breaker.",
-                "paragraph_2": "When changing messages, it will pull similar power to an LCD television but when idle, will use 90+% less power. Power consumption is very low when Vestaboard is not changing messages.",
-                "paragraph_3": "Vestaboard supports 100-240V for US and International power consumption and requires 121-watts when updating messages."
+                "paragraph_1": "Cada vertido toma únicamente 5 segundos; el bartender se encarga del batido, la mezcla y la decoración. "
             }
         },
         "faq_3": {
-            "question": "How does Vestaboard display messages?",
+            "question": "¿Elyxm sustituye por completo la necesidad de un bartender?",
             "answer": {
-                "paragraph_1": "Vestaboard requires a WiFi network connected to the Internet in order to display messages.",
-                "paragraph_2": "First-time setup is performed using the Vestaboard app for iPhone and Android. Setup consists of a few simple steps where you will create and/or link a Vestaboard account to your Vestaboard and connect it to your WiFi network.",
-                "paragraph_3": "Once your Vestaboard is connected, you will not need to re-connect it to WiFi unless you make changes to your router or Internet connection."
+                "paragraph_1": "Aunque Elyxm maneja el vertido preciso y agiliza el servicio, es recomendable contar con personal para manejar otras bebidas (vino, champán, bebidas sin alcohol) y ayudar a los invitados con preguntas o solicitudes especiales."
             }
         },
         "faq_4": {
-            "question": "How many Vestaboards can I control at once?",
+            "question": "¿Puedo personalizar el menú de cócteles para la temática de mi boda?",
             "answer": {
-                "paragraph_1": "You may connect multiple Vestaboards to one WiFi network. The Vestaboard app allows you to connect and control an unlimited amount of Vestaboards, whether they are on one network or multiple networks."
+                "paragraph_1": "¡Claro que sí! Puedes elegir entre más de 250 recetas o trabajar con nuestro equipo para crear cócteles exclusivos que reflejen tu estilo y temática."
             }
         },
         "faq_5": {
-            "question": "How do I pick messages to send to my Vestaboard?",
+            "question": "¿Ofrecen mocktails o alternativas sin alcohol?",
             "answer": {
-                "paragraph_1": "Vestaboard displays messages automatically through channels you subscribe to or create for yourself. You can also send individual messages on-the-go. Vestaboard receives the message information via WiFi, and flips the characters to the proper letters or numbers to show exactly what you want to see.",
-                "paragraph_2": "After performing initial setup from the Vestaboard app, you will be able to control and display messages on your Vestaboard from anywhere in the world through the app, or from any web browser, such as Chrome."
+                "paragraph_1": "Sí. Contamos con una variedad de mocktails que ofrecen la misma experiencia elevada sin contenido alcohólico."
             }
         },
         "faq_6": {
-            "question": "How long of a message can I display on Vestaboard?",
+            "question": "¿Cómo aseguramos que haya suficiente inventario para todos nuestros invitados?",
             "answer": {
-                "paragraph_1": "Vestaboard has room to display 132 characters, including letters, numbers, symbols, and colors. It's perfect for displaying news and weather updates, quotes, and whatever messages you want to share.",
-                "paragraph_2": "To display the message on the board, Vestaboard will process the text entry and smartly arrange it to look seamless on the board or allow you to control it so that what-you-see-is-what-you-get (WYSIWYG)."
+                "paragraph_1": "El sistema Elyxm rastrea el inventario en tiempo real, por lo que sabrás exactamente cuándo reabastecer. Nuestro equipo también puede ayudarte a estimar las cantidades necesarias según el número de invitados."
             }
         },
         "faq_7": {
-            "question": "More questions?",
+            "question": "¿Se puede decorar o personalizar la zona del bar?",
             "answer": {
-                "paragraph_1": "Check out our Help Center for more information such as delivery timing, installation information, warranty, and more: www.vestaboard.com/help",
-                "paragraph_2": "Contact us anytime via the chat module or via our Contact Us form (support@vestaboard.com)."
+                "paragraph_1": "Por supuesto. Puedes añadir arreglos florales, letreros o cualquier decoración que desees alrededor de la estación Elyxm para que combine con la estética de tu boda."
+            }
+        },
+        "faq_8": {
+            "question": "¿Qué podemos personalizar y/o individualizar?",
+            "answer": {
+                "paragraph_1": "Nuestro equipo de soporte está disponible por teléfono y a través de nuestro portal en línea. Además, proporcionamos pasos sencillos de solución de problemas en el manual de usuario para resolver cualquier situación con rapidez."
+            }
+        },
+        "faq_9": {
+            "question": "¿Existe algún costo adicional por las recetas personalizadas?",
+            "answer": {
+                "paragraph_1": "Por lo general, la personalización está incluida en nuestro servicio estándar. Sin embargo, ciertos ingredientes especializados pueden generar costos adicionales. Te aclararemos todos los detalles durante la fase de planificación."
             }
         }
     }

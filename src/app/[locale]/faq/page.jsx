@@ -14,48 +14,34 @@ const FAQ = () => {
         </p>
         {/* faq 1 */}
         <div className="w-full flex flex-col md:flex-row border-t text-[#f5f5f7] border-white py-10 mt-4">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 pr-0 md:pr-16">
                 <p className="text-[20px] md:text-[34px]">{t("faq_1.question")}</p>
             </div>
             <div className="w-full md:w-1/2 text-base md:text-lg mt-6 md:mt-0">
                 <p className="">{t("faq_1.answer.paragraph_1")}</p>
-                <div className="mt-6">
-                    <p className="">{t("faq_1.answer.paragraph_2.width")}</p>
-                    <p className="">{t("faq_1.answer.paragraph_2.height")}</p>
-                    <p className="">{t("faq_1.answer.paragraph_2.depth")}</p>
-                </div>
-                <p className="mt-6">{t("faq_1.answer.paragraph_3")}</p>
             </div>
         </div>
         {/* faq 2 */}
         <div className="w-full flex flex-col md:flex-row border-t text-[#f5f5f7] border-white py-10 mt-4">
-            <div  className="w-full md:w-1/2">
+            <div  className="w-full md:w-1/2 pr-0 md:pr-16">
                 <p className="text-[20px] md:text-[34px]">{t("faq_2.question")}</p>
             </div>
             <div className="w-full md:w-1/2 text-base md:text-lg mt-6 md:mt-0">
                 <p className="">{t("faq_2.answer.paragraph_1")}</p>
-                <div className="mt-6">
-                    <p className="">{t("faq_2.answer.paragraph_2")}</p>
-                </div>
-                <p className="mt-6">{t("faq_2.answer.paragraph_3")}</p>
             </div>
         </div>
         {/* faq 3 */}
         <div className="w-full flex flex-col md:flex-row border-t text-[#f5f5f7] border-white py-10 mt-4">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 pr-0 md:pr-16">
                 <p className="text-[20px] md:text-[34px]">{t("faq_3.question")}</p>
             </div>
             <div className="w-full md:w-1/2 text-base md:text-lg mt-6 md:mt-0">
                 <p className="">{t("faq_3.answer.paragraph_1")}</p>
-                <div className="mt-6">
-                    <p className="">{t("faq_3.answer.paragraph_2")}</p>
-                </div>
-                <p className="mt-6">{t("faq_3.answer.paragraph_3")}</p>
             </div>
         </div>
         {/* faq 4 */}
         <div className="w-full flex flex-col md:flex-row border-t text-[#f5f5f7] border-white py-10 mt-4">
-            <div className="w-full md:w-1/2 pr-0 md:pr-20">
+            <div className="w-full md:w-1/2 pr-0 md:pr-16">
                 <p className="text-[20px] md:text-[34px]">{t("faq_4.question")}</p>
             </div>
             <div className="w-full md:w-1/2 text-base md:text-lg mt-6 md:mt-0">
@@ -64,32 +50,47 @@ const FAQ = () => {
         </div>
         {/* faq 5 */}
         <div className="w-full flex flex-col md:flex-row border-t text-[#f5f5f7] border-white py-10 mt-4">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 pr-0 md:pr-16">
                 <p className="text-[20px] md:text-[34px]">{t("faq_5.question")}</p>
             </div>
             <div className="w-full md:w-1/2 text-base md:text-lg mt-6 md:mt-0">
                 <p className="">{t("faq_5.answer.paragraph_1")}</p>
-                <p className="mt-6">{t("faq_5.answer.paragraph_2")}</p>
             </div>
         </div>
         {/* faq 6 */}
         <div className="w-full flex flex-col md:flex-row border-t text-[#f5f5f7] border-white py-10 mt-4">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 pr-0 md:pr-16">
                 <p className="text-[20px] md:text-[34px]">{t("faq_6.question")}</p>
             </div>
             <div className="w-full md:w-1/2 text-base md:text-lg mt-6 md:mt-0">
                 <p className="">{t("faq_6.answer.paragraph_1")}</p>
-                <p className="mt-6">{t("faq_6.answer.paragraph_2")}</p>
             </div>
         </div>
         {/* faq 7 */}
         <div className="w-full flex flex-col md:flex-row border-t text-[#f5f5f7] border-white py-10 mt-4">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 pr-0 md:pr-16">
                 <p className="text-[20px] md:text-[34px]">{t("faq_7.question")}</p>
             </div>
             <div className="w-full md:w-1/2 text-base md:text-lg mt-6 md:mt-0">
                 <p className="">{t("faq_7.answer.paragraph_1")}</p>
-                <p className="mt-6">{t("faq_7.answer.paragraph_2")}</p>
+            </div>
+        </div>
+        {/* faq 8 */}
+        <div className="w-full flex flex-col md:flex-row border-t text-[#f5f5f7] border-white py-10 mt-4">
+            <div className="w-full md:w-1/2 pr-0 md:pr-16">
+                <p className="text-[20px] md:text-[34px]">{t("faq_8.question")}</p>
+            </div>
+            <div className="w-full md:w-1/2 text-base md:text-lg mt-6 md:mt-0">
+                <p className="">{t("faq_8.answer.paragraph_1")}</p>
+            </div>
+        </div>
+        {/* faq 9 */}
+        <div className="w-full flex flex-col md:flex-row border-t text-[#f5f5f7] border-white py-10 mt-4">
+            <div className="w-full md:w-1/2 pr-0 md:pr-16">
+                <p className="text-[20px] md:text-[34px]">{t("faq_9.question")}</p>
+            </div>
+            <div className="w-full md:w-1/2 text-base md:text-lg mt-6 md:mt-0">
+                <p className="">{t("faq_9.answer.paragraph_1")}</p>
             </div>
         </div>
       </section>
